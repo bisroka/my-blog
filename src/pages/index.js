@@ -80,6 +80,7 @@ const GlobalStyle = createGlobalStyle`
     body, h1,h2,h3,h4,h5,h6{
         margin:0;
         padding:0;
+        overflow-x: hidden;
         font-family: "Charter";
         font-weight: 100;
         font-style: italic;
@@ -92,6 +93,7 @@ const GlobalStyle = createGlobalStyle`
 
 class IndexPage extends Component {
   state = {}
+
   render() {
     return (
       <>
