@@ -6,10 +6,19 @@ const FooterStyled = styled.div`
   width: 100vw;
   overflow: hidden;
   background-color: #4258b8;
+  p {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+  }
 `
 
-const Footer = () => {
-  return <FooterStyled></FooterStyled>
+const Footer = ({ footerContent }) => {
+  return (
+    <FooterStyled>
+      <p>{footerContent}</p>
+    </FooterStyled>
+  )
 }
 
 export default Footer

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import hej1 from "../assets/images/hej1.png"
 
 const ContactImgStyled = styled.img`
   display: block;
@@ -8,8 +7,8 @@ const ContactImgStyled = styled.img`
   bottom: -5vh;
 `
 
-const ContactImg = () => {
-  return <ContactImgStyled src={hej1}></ContactImgStyled>
+const ContactImg = ({ img }) => {
+  return <ContactImgStyled src={img}></ContactImgStyled>
 }
 
 export default ContactImg

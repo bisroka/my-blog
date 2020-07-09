@@ -15,13 +15,13 @@ const NewsStyled = styled.div`
   margin: 5vh 0;
 `
 
-const News = () => {
+const News = ({ postTitle, postDescription, button }) => {
   return (
     <NewsStyled>
       <NewsImg />
-      <NewsTitle />
-      <NewsDescription />
-      <NewsButton />
+      <NewsTitle postTitle={postTitle} />
+      <NewsDescription postDescription={postDescription} />
+      <NewsButton button={button} />
     </NewsStyled>
   )
 }

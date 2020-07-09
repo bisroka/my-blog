@@ -14,12 +14,23 @@ const AboutMe = styled.div`
     no-repeat padding-box;
 `
 
-const AboutMeSection = () => {
+const AboutMeSection = ({
+  header,
+  subheader,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  img,
+}) => {
   return (
     <AboutMe>
-      <Header />
-      <AboutMeSubtitle />
-      <AboutMeParagraph />
+      <Header header={header} />
+      <AboutMeSubtitle subheader={subheader} img={img} />
+      <AboutMeParagraph
+        paragraph1={paragraph1}
+        paragraph2={paragraph2}
+        paragraph3={paragraph3}
+      />
     </AboutMe>
   )
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import bansimg from "../assets/images/bans.png"
 
 const AboutMeSubtitleStyle = styled.div`
   display: flex;
@@ -20,12 +19,12 @@ const AboutMeSubtitleStyle = styled.div`
   }
 `
 
-const AboutMeSubtitle = () => {
+const AboutMeSubtitle = ({ subheader, img }) => {
   return (
     <AboutMeSubtitleStyle>
-      <img src={bansimg} />
+      <img src={img} />
 
-      <h3> Jestem Bartek, a to mój blog o tym, jak staję się programistą</h3>
+      <h3> {subheader}</h3>
     </AboutMeSubtitleStyle>
   )
 }

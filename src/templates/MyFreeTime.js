@@ -9,13 +9,21 @@ const MyFreeTimeStyle = styled.div`
   align-items: center;
 `
 
-const MyFreeTime = () => {
+const MyFreeTime = ({
+  header,
+  activity1,
+  activity2,
+  activity3,
+  img1,
+  img2,
+  img3,
+}) => {
   return (
     <MyFreeTimeStyle>
-      <Header />
-      <Activity />
-      <Activity />
-      <Activity />
+      <Header header={header} />
+      <Activity activity={activity1} img={img1} />
+      <Activity activity={activity2} img={img2} />
+      <Activity activity={activity3} img={img3} />
     </MyFreeTimeStyle>
   )
 }

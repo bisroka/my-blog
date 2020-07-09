@@ -6,14 +6,8 @@ const NewsDescriptionStyle = styled.p`
   font-size: 25px;
 `
 
-const NewsDescription = () => {
-  return (
-    <NewsDescriptionStyle>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste
-      quasi possimus recusandae cum consequuntur beatae eaque, odio fugit soluta
-      quia aut, dicta quae ea, ducimus voluptas odit dolorum! Cum?
-    </NewsDescriptionStyle>
-  )
+const NewsDescription = ({ postDescription }) => {
+  return <NewsDescriptionStyle>{postDescription}</NewsDescriptionStyle>
 }
 
 export default NewsDescription

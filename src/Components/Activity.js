@@ -12,11 +12,11 @@ const ActivityStyled = styled.div`
   align-items: center;
 `
 
-const Activity = () => {
+const Activity = ({ activity, img }) => {
   return (
     <ActivityStyled>
-      <ActivityImg />
-      <ActivityDescription />
+      <ActivityImg img={img} />
+      <ActivityDescription activity={activity} />
     </ActivityStyled>
   )
 }

@@ -13,8 +13,8 @@ const NewsButtonStyle = styled.button`
   border-radius: 25px;
 `
 
-const NewsButton = () => {
-  return <NewsButtonStyle>Więcej</NewsButtonStyle>
+const NewsButton = ({ button }) => {
+  return <NewsButtonStyle>{button}</NewsButtonStyle>
 }
 
 export default NewsButton

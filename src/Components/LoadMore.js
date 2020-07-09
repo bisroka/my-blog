@@ -12,8 +12,8 @@ const LoadMoreStyle = styled.button`
   border-radius: 25px;
 `
 
-const LoadMore = () => {
-  return <LoadMoreStyle>Załaduj więcej</LoadMoreStyle>
+const LoadMore = ({ button }) => {
+  return <LoadMoreStyle>{button}</LoadMoreStyle>
 }
 
 export default LoadMore

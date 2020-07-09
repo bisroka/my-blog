@@ -11,14 +11,26 @@ const BlogStyled = styled.div`
   background-color: #4258b8;
 `
 
-const Blog = () => {
+const Blog = ({ header, postTitle, postDescription, button1, button2 }) => {
   return (
     <BlogStyled>
-      <Header />
-      <News />
-      <News />
-      <News />
-      <LoadMore />
+      <Header header={header} />
+      <News
+        button={button1}
+        postTitle={postTitle}
+        postDescription={postDescription}
+      />
+      <News
+        button={button1}
+        postTitle={postTitle}
+        postDescription={postDescription}
+      />
+      <News
+        button={button1}
+        postTitle={postTitle}
+        postDescription={postDescription}
+      />
+      <LoadMore button={button2} />
     </BlogStyled>
   )
 }

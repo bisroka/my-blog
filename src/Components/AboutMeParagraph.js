@@ -6,27 +6,12 @@ const ParagraphWrapperStyle = styled.div`
   padding: 0 5vh;
 `
 
-const AboutMeParagraph = () => {
+const AboutMeParagraph = ({ paragraph1, paragraph2, paragraph3 }) => {
   return (
     <ParagraphWrapperStyle>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum
-        molestiae esse est laudantium accusamus, quo quibusdam facere modi,
-        architecto ex aspernatur alias consequatur cum totam assumenda nesciunt
-        repudiandae ratione.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum
-        molestiae esse est laudantium accusamus, quo quibusdam facere modi,
-        architecto ex aspernatur alias consequatur cum totam assumenda nesciunt
-        repudiandae ratione.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum
-        molestiae esse est laudantium accusamus, quo quibusdam facere modi,
-        architecto ex aspernatur alias consequatur cum totam assumenda nesciunt
-        repudiandae ratione.
-      </p>
+      <p>{paragraph1}</p>
+      <p>{paragraph2}</p>
+      <p>{paragraph3}</p>
     </ParagraphWrapperStyle>
   )
 }

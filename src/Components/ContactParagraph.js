@@ -8,10 +8,10 @@ const ContactParagraphStyled = styled.div`
   font-size: 20px;
 `
 
-const ContactParagraph = () => {
+const ContactParagraph = ({ subheader }) => {
   return (
     <ContactParagraphStyled>
-      <p>Napisz do mnie, Lub sprawdź moje profile na innych portalach</p>
+      <p>{subheader}</p>
     </ContactParagraphStyled>
   )
 }

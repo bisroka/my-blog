@@ -14,13 +14,10 @@ const ActivityDescriptionStyle = styled.div`
   border-radius: 38px;
 `
 
-const ActivityDescription = () => {
+const ActivityDescription = ({ activity }) => {
   return (
     <ActivityDescriptionStyle>
-      <p>
-        <strong>Rozwijam swój umysł</strong> <br /> - czytam książki, tworzę
-        nowe projekty, rozwijam swoje pomysły.
-      </p>
+      <p>{activity}</p>
     </ActivityDescriptionStyle>
   )
 }

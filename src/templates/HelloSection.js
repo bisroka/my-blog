@@ -12,11 +12,11 @@ const HelloContainer = styled.div`
     no-repeat padding-box;
 `
 
-const HelloSection = () => {
+const HelloSection = ({ header, img1, img2 }) => {
   return (
     <HelloContainer>
-      <Hello />
-      <HelloImg />
+      <Hello header={header} img={img2} />
+      <HelloImg img={img1} />
     </HelloContainer>
   )
 }

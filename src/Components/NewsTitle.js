@@ -6,8 +6,8 @@ const NewsTitleStyle = styled.h3`
   font-size: 30px;
 `
 
-const NewsTitle = () => {
-  return <NewsTitleStyle>Tytuł wpisu</NewsTitleStyle>
+const NewsTitle = ({ postTitle }) => {
+  return <NewsTitleStyle>{postTitle}</NewsTitleStyle>
 }
 
 export default NewsTitle

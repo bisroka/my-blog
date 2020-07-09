@@ -11,12 +11,12 @@ const ContactStyled = styled.div`
   min-height: 40vh;
 `
 
-const Contact = () => {
+const Contact = ({ header, subheader, img }) => {
   return (
     <ContactStyled>
-      <Header />
-      <ContactParagraph />
-      <ContactImg />
+      <Header header={header} />
+      <ContactParagraph subheader={subheader} />
+      <ContactImg img={img} />
       <ContactIcons />
     </ContactStyled>
   )

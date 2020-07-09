@@ -8,8 +8,8 @@ const HeaderStyle = styled.h2`
   font-size: 48px;
 `
 
-const Header = () => {
-  return <HeaderStyle>Poznajmy się</HeaderStyle>
+const Header = ({ header }) => {
+  return <HeaderStyle>{header}</HeaderStyle>
 }
 
 export default Header
