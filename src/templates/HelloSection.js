@@ -7,6 +7,9 @@ import HelloImg from "../Components/HelloImg"
 const HelloContainer = styled.div`
   position: relative;
   height: 95vh;
+  background: transparent
+    linear-gradient(180deg, #ffffff 0%, #eeeeee 50%, #4258b8 100%) 0% 0%
+    no-repeat padding-box;
 `
 
 const HelloSection = () => {

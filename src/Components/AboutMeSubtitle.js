@@ -6,11 +6,12 @@ const AboutMeSubtitleStyle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 5vh 1vh;
+  margin: 5vh 1vh 0vh;
   img {
     display: block;
     width: 118px;
     height: 154px;
+    border-radius: 50%;
   }
 
   h3 {

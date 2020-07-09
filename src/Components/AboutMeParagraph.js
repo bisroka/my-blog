@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const ParagraphWrapperStyle = styled.div`
-  margin: 5vh 0vh;
+  margin: 1vh 0vh;
   padding: 0 5vh;
 `
 

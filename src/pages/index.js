@@ -7,6 +7,7 @@ import AboutMeSection from "../templates/AboutMeSection"
 import MyFreeTime from "../templates/MyFreeTime"
 import Blog from "../templates/Blog"
 import Contact from "../templates/Contact"
+import Footer from "../templates/Footer"
 
 const GlobalStyle = createGlobalStyle`
     body, h1,h2,h3,h4,h5,h6{
@@ -34,6 +35,7 @@ class IndexPage extends Component {
         <MyFreeTime />
         <Blog />
         <Contact />
+        <Footer />
       </>
     )
   }
