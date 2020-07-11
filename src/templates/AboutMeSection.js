@@ -5,7 +5,7 @@ import Header from "../Components/Header"
 import AboutMeSubtitle from "../Components/AboutMeSubtitle"
 import AboutMeParagraph from "../Components/AboutMeParagraph"
 
-const AboutMe = styled.div`
+const AboutMe = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

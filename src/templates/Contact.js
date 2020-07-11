@@ -6,7 +6,7 @@ import ContactParagraph from "../Components/ContactParagraph"
 import ContactImg from "../Components/ContactImg"
 import ContactIcons from "../Components/ContactIcons"
 
-const ContactStyled = styled.div`
+const ContactStyled = styled.footer`
   position: relative;
   min-height: 40vh;
 `

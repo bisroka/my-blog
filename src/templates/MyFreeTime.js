@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Header from "../Components/Header"
 import Activity from "../Components/Activity"
 
-const MyFreeTimeStyle = styled.div`
+const MyFreeTimeStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

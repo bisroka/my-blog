@@ -4,7 +4,7 @@ import styled from "styled-components"
 import ActivityImg from "../Components/ActivityImg"
 import ActivityDescription from "../Components/ActivityDescription"
 
-const ActivityStyled = styled.div`
+const ActivityStyled = styled.article`
   width: 85%;
   margin: 5vh 0;
   display: flex;

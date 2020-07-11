@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Menu from "../Components/Menu"
 import Hamburger from "../Components/Hamburger"
 
-const NavBar = styled.div`
+const NavBar = styled.header`
   display: block;
   width: 100%;
   height: 5vh;

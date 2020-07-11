@@ -14,7 +14,7 @@ const TriangleImg = styled.img`
   margin-top: 1vh;
 `
 
-const HelloParagraph = styled.p`
+const HeaderStyled = styled.h2`
   margin: 0;
   padding: 0;
   display: block;
@@ -25,7 +25,7 @@ const Hello = ({ header, img }) => {
   return (
     <HelloContainer>
       <TriangleImg src={img}></TriangleImg>
-      <HelloParagraph>{header}</HelloParagraph>
+      <HeaderStyled>{header}</HeaderStyled>
     </HelloContainer>
   )
 }

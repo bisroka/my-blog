@@ -77,10 +77,13 @@ const pageContent = {
 }
 
 const GlobalStyle = createGlobalStyle`
+      body{
+        overflow-x: hidden;
+        width:100vw;
+}
     body, h1,h2,h3,h4,h5,h6{
         margin:0;
         padding:0;
-        overflow-x: hidden;
         font-family: "Charter";
         font-weight: 100;
         font-style: italic;
@@ -88,6 +91,7 @@ const GlobalStyle = createGlobalStyle`
     }
     *, *::before, *::after{
         box-sizing: border-box;
+     
     }
 `
 

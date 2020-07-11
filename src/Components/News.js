@@ -6,7 +6,7 @@ import NewsTitle from "../Components/NewsTitle"
 import NewsDescription from "../Components/NewsDescription"
 import NewsButton from "../Components/NewsButton"
 
-const NewsStyled = styled.div`
+const NewsStyled = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;

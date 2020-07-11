@@ -4,7 +4,7 @@ import Header from "../Components/Header"
 import News from "../Components/News"
 import LoadMore from "../Components/LoadMore"
 
-const BlogStyled = styled.div`
+const BlogStyled = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

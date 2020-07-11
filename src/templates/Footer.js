@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const FooterStyled = styled.div`
+const FooterStyled = styled.footer`
   height: 5vh;
   width: 100vw;
   overflow: hidden;

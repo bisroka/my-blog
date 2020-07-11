@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import MenuButton from "./MenuButton"
 
-const MenuStyled = styled.div`
+const MenuStyled = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;

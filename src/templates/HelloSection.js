@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Hello from "../Components/Hello"
 import HelloImg from "../Components/HelloImg"
 
-const HelloContainer = styled.div`
+const HelloContainer = styled.section`
   position: relative;
   height: 95vh;
   background: transparent
