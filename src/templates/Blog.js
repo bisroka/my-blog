@@ -15,7 +15,7 @@ const BlogStyled = styled.section`
 const Blog = ({ header, postTitle, postDescription, button1, button2 }) => {
   return (
     <BlogStyled>
-      <Header header={header} />
+      <Header lightColor header={header} />
       <News
         button={button1}
         postTitle={postTitle}

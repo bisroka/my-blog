@@ -37,10 +37,10 @@ const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
 
   return (
     <AboutMeStyled>
-      <Header header={header} />
+      <Header lightColor header={header} />
       <AboutMeSubtitleStyled>
         <img src={img} />
-        <Subheader subheader={subheader}></Subheader>
+        <Subheader lightColor subheader={subheader}></Subheader>
       </AboutMeSubtitleStyled>
       {paragr}
     </AboutMeStyled>
