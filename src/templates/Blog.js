@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Header from "../Components/Header"
 import News from "../Components/News"
-import LoadMore from "../Components/LoadMore"
+
+import Button from "../Components/Button"
 
 const BlogStyled = styled.section`
   display: flex;
@@ -30,7 +31,7 @@ const Blog = ({ header, postTitle, postDescription, button1, button2 }) => {
         postTitle={postTitle}
         postDescription={postDescription}
       />
-      <LoadMore button={button2} />
+      <Button loadMore button={button2} />
     </BlogStyled>
   )
 }

@@ -9,21 +9,19 @@ const MyFreeTimeStyle = styled.section`
   align-items: center;
 `
 
-const MyFreeTime = ({
-  header,
-  activity1,
-  activity2,
-  activity3,
-  img1,
-  img2,
-  img3,
-}) => {
+const MyFreeTime = ({ header, activities }) => {
+  const myActivities = activities.map(activity => (
+    <Activity
+      key={activity.id}
+      img={activity.img}
+      title={activity.title}
+      paragraph={activity.paragraph}
+    />
+  ))
   return (
     <MyFreeTimeStyle>
       <Header header={header} />
-      <Activity activity={activity1} img={img1} />
-      <Activity activity={activity2} img={img2} />
-      <Activity activity={activity3} img={img3} />
+      {myActivities}
     </MyFreeTimeStyle>
   )
 }

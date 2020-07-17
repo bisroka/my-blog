@@ -18,7 +18,6 @@ class Navigation extends Component {
       isMenuOpen,
     })
   }
-  // showMenu = () => (this.state.isMenuOpen ? true : false)
 
   render() {
     return (
@@ -26,9 +25,7 @@ class Navigation extends Component {
         <NavBar>
           <Hamburger click={this.hamburgerButtonHandler} />
           <Menu
-            button1={this.props.button1}
-            button2={this.props.button2}
-            button3={this.props.button3}
+            buttons={this.props.buttons}
             isVisible={this.state.isMenuOpen}
           />
         </NavBar>

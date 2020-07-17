@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-import NewsImg from "../Components/NewsImg"
-import NewsTitle from "../Components/NewsTitle"
-import NewsDescription from "../Components/NewsDescription"
-import NewsButton from "../Components/NewsButton"
+import Subheader from "../Components/Subheader"
+import Paragraph from "../Components/Paragraph"
+
+import Button from "../Components/Button"
 
 const NewsStyled = styled.article`
   display: flex;
@@ -14,14 +14,20 @@ const NewsStyled = styled.article`
   background-color: white;
   margin: 5vh 0;
 `
+const NewsImgStyle = styled.img`
+  display: block;
+  background: grey;
+  width: 85vw;
+  height: 85vw;
+`
 
 const News = ({ postTitle, postDescription, button }) => {
   return (
     <NewsStyled>
-      <NewsImg />
-      <NewsTitle postTitle={postTitle} />
-      <NewsDescription postDescription={postDescription} />
-      <NewsButton button={button} />
+      <NewsImgStyle></NewsImgStyle>
+      <Subheader subheader={postTitle} />
+      <Paragraph paragraph={postDescription} section="news" />
+      <Button button={button} />
     </NewsStyled>
   )
 }

@@ -1,10 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import messenger from "../assets/images/messenger.png"
-import linkedin from "../assets/images/linkedin.png"
-import github from "../assets/images/github.png"
-
 const ContactIconsStyled = styled.div`
   position: absolute;
   width: 45vw;
@@ -15,14 +11,11 @@ const ContactIconsStyled = styled.div`
   }
 `
 
-const ContactIcons = () => {
-  return (
-    <ContactIconsStyled>
-      <img src={messenger} />
-      <img src={linkedin} />
-      <img src={github} />
-    </ContactIconsStyled>
-  )
+const ContactIcons = ({ contactPictures }) => {
+  const contactPicture = contactPictures.map(picture => (
+    <img key={picture.id} src={picture.src} />
+  ))
+  return <ContactIconsStyled>{contactPicture}</ContactIconsStyled>
 }
 
 export default ContactIcons

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import MenuButton from "./MenuButton"
+import Button from "./Button"
 
 const MenuStyled = styled.nav`
   display: flex;
@@ -19,14 +19,11 @@ const MenuStyled = styled.nav`
   opacity: ${props => (props.isVisible ? "1" : "0")};
 `
 
-const Menu = ({ button1, button2, button3, isVisible }) => {
-  return (
-    <MenuStyled isVisible={isVisible}>
-      <MenuButton button={button1} />
-      <MenuButton button={button2} />
-      <MenuButton button={button3} />
-    </MenuStyled>
-  )
+const Menu = ({ isVisible, buttons }) => {
+  const navButton = buttons.map(button => (
+    <Button key={button.id} button={button.content} />
+  ))
+  return <MenuStyled isVisible={isVisible}>{navButton}</MenuStyled>
 }
 
 export default Menu

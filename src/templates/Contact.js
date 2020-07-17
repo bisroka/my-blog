@@ -2,22 +2,26 @@ import React from "react"
 import styled from "styled-components"
 
 import Header from "../Components/Header"
-import ContactParagraph from "../Components/ContactParagraph"
-import ContactImg from "../Components/ContactImg"
+import Paragraph from "../Components/Paragraph"
 import ContactIcons from "../Components/ContactIcons"
 
 const ContactStyled = styled.footer`
   position: relative;
   min-height: 40vh;
 `
+const ContactImgStyled = styled.img`
+  display: block;
+  position: absolute;
+  bottom: -5vh;
+`
 
-const Contact = ({ header, subheader, img }) => {
+const Contact = ({ header, subheader, img, contactPictures }) => {
   return (
     <ContactStyled>
       <Header header={header} />
-      <ContactParagraph subheader={subheader} />
-      <ContactImg img={img} />
-      <ContactIcons />
+      <Paragraph paragraph={subheader} section="contact" />
+      <ContactImgStyled src={img}></ContactImgStyled>
+      <ContactIcons contactPictures={contactPictures} />
     </ContactStyled>
   )
 }

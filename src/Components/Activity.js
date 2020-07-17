@@ -1,9 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import ActivityImg from "../Components/ActivityImg"
-import ActivityDescription from "../Components/ActivityDescription"
-
 const ActivityStyled = styled.article`
   width: 85%;
   margin: 5vh 0;
@@ -11,12 +8,36 @@ const ActivityStyled = styled.article`
   flex-direction: column;
   align-items: center;
 `
+const ActivityDescriptionStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  background-color: #4258b8;
+  border-radius: 38px;
+  h3 {
+    color: white;
+  }
+`
+const ActivityImgStyle = styled.img`
+  display: block;
+  height: 250px;
+  margin: 3vh 0;
+`
 
-const Activity = ({ activity, img }) => {
+const Activity = ({ img, title, paragraph }) => {
   return (
     <ActivityStyled>
-      <ActivityImg img={img} />
-      <ActivityDescription activity={activity} />
+      <ActivityImgStyle src={img}></ActivityImgStyle>
+      <ActivityDescriptionStyle>
+        <h3>{title}</h3>
+        <p>{paragraph}</p>
+      </ActivityDescriptionStyle>
     </ActivityStyled>
   )
 }
