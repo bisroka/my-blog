@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const HelloSectionContainer = styled.section`
   position: relative;
@@ -16,23 +17,30 @@ const HelloContainer = styled.div`
 `
 const TriangleImg = styled.img`
   display: block;
-  width: 25px;
-  height: 25px;
-  margin-top: 1vh;
+  width: 3vh;
+  height: 3vh;
+  margin-top: 3vh;
 `
 
 const HeaderStyled = styled.h2`
   margin: 0;
   padding: 0;
   display: block;
-  font-size: 39px;
+  font-size: 5vh;
+  @media ${device.tablet} {
+    font-size: 7vh;
+  }
 `
 const HiImg = styled.img`
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 340px;
-  height: 340px;
+  width: 40vh;
+  height: 40vh;
+  @media ${device.tablet} {
+    width: 50vh;
+    height: 50vh;
+  }
 `
 
 const HelloSection = ({ header, images }) => {

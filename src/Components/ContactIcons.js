@@ -1,13 +1,19 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const ContactIconsStyled = styled.div`
   position: absolute;
   width: 45vw;
   right: 5vw;
   top: 25vh;
+  @media ${device.tablet} {
+    right: 5vw;
+    top: 30vh;
+  }
   img {
     margin: 10px;
+    width: 7vw;
   }
 `
 

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const ButtonStyled = styled.button`
   width: ${props => (props.loadMore ? "100%" : "55%")};
@@ -11,6 +12,9 @@ const ButtonStyled = styled.button`
   color: ${props => (props.loadMore ? "#4258b8" : "white")};
   background-color: ${props => (props.loadMore ? "white" : "#4258b8")};
   border-radius: 25px;
+  @media ${device.tablet} {
+    max-width: 300px;
+  }
 `
 const Button = ({ button, loadMore }) => {
   return <ButtonStyled loadMore={loadMore}>{button}</ButtonStyled>

@@ -105,7 +105,9 @@ const GlobalStyle = createGlobalStyle`
       body{
         overflow-x: hidden;
         width:100vw;
+        margin: 0 auto;
 }
+
     body, h1,h2,h3,h4,h5,h6{
         margin:0;
         padding:0;
@@ -118,6 +120,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
      
     }
+
 `
 
 class IndexPage extends Component {

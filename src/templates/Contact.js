@@ -11,6 +11,7 @@ const ContactStyled = styled.footer`
 `
 const ContactImgStyled = styled.img`
   display: block;
+  height: 40vh;
   position: absolute;
   bottom: -5vh;
 `

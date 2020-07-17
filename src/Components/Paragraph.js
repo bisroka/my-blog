@@ -1,9 +1,14 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const AboutMeParagraphStyled = styled.p`
   margin: 1vh 0vh;
   padding: 0 5vh;
+  font-size: 2vh;
+  @media ${device.tablet} {
+    font-size: 4vh;
+  }
 `
 const NewsParagraphStyle = styled.p`
   text-align: center;
@@ -14,6 +19,9 @@ const ContactParagraphStyled = styled.div`
   width: 45vw;
   right: 5vw;
   font-size: 20px;
+  @media ${device.tablet} {
+    font-size: 4vh;
+  }
 `
 
 const Paragraph = ({ section, paragraph }) => {

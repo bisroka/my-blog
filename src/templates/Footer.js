@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const FooterStyled = styled.footer`
   height: 5vh;
@@ -10,6 +11,9 @@ const FooterStyled = styled.footer`
     font-size: 12px;
     text-align: center;
     color: white;
+    @media ${device.tablet} {
+      font-size: 1.5vh;
+    }
   }
 `
 

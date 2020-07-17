@@ -10,15 +10,15 @@ const NewsStyled = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 85vw;
+  width: 75vw;
   background-color: white;
   margin: 5vh 0;
 `
 const NewsImgStyle = styled.img`
   display: block;
   background: grey;
-  width: 85vw;
-  height: 85vw;
+  width: 75vw;
+  height: 50vw;
 `
 
 const News = ({ postTitle, postDescription, button }) => {
