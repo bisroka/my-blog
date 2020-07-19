@@ -4,8 +4,8 @@ import styled from "styled-components"
 const StyledHamburger = styled.div`
   display: flex;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 7vh;
+  height: 7vh;
   top: 5vw;
   right: 5vw;
   align-items: center;
@@ -17,15 +17,15 @@ const StyledHamburger = styled.div`
   cursor: pointer;
 
   div {
-    width: 24px;
-    height: 2px;
+    width: 6vh;
+    height: 1vh;
     position: relative;
     background: black;
     transition: transform 0.5s ease;
     ::before,
     ::after {
-      width: 24px;
-      height: 2px;
+      width: 6vh;
+      height: 1vh;
       position: absolute;
       content: "";
       display: block;
@@ -34,11 +34,11 @@ const StyledHamburger = styled.div`
     }
     ::before {
       left: 0px;
-      top: -3px;
+      top: -1.5vh;
     }
     ::after {
       left: 0px;
-      top: 3px;
+      top: 1.5vh;
     }
   }
 `

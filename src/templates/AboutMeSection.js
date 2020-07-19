@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 import Header from "../Components/Header"
 import Paragraph from "../Components/Paragraph"
@@ -19,10 +20,13 @@ const AboutMeSubtitleStyled = styled.article`
   align-items: center;
   margin: 5vh 1vh 0vh;
   img {
+    margin: 1vh;
     display: block;
-    width: 118px;
-    height: 154px;
+    width: 30vw;
     border-radius: 50%;
+    @media ${device.tablet} {
+      width: 50vw;
+    }
   }
 `
 
