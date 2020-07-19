@@ -6,14 +6,24 @@ const ContactIconsStyled = styled.div`
   position: absolute;
   width: 45vw;
   right: 5vw;
-  top: 25vh;
+  top: 30vh;
   @media ${device.tablet} {
     right: 5vw;
     top: 30vh;
   }
+  @media ${device.laptop} {
+    top: 25vh;
+    right: 0;
+  }
   img {
     margin: 10px;
     width: 7vw;
+    @media ${device.tablet} {
+      width: 5vw;
+    }
+    @media ${device.laptop} {
+      width: 3vw;
+    }
   }
 `
 

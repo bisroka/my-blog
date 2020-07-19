@@ -27,7 +27,17 @@ const AboutMeSubtitleStyled = styled.article`
     @media ${device.tablet} {
       width: 50vw;
     }
+    @media ${device.laptop} {
+      width: 15vw;
+    }
   }
+`
+
+const WrapperStyled = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 `
 
 const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
@@ -41,12 +51,14 @@ const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
 
   return (
     <AboutMeStyled>
-      <Header lightColor header={header} />
-      <AboutMeSubtitleStyled>
-        <img src={img} />
-        <Subheader lightColor subheader={subheader}></Subheader>
-      </AboutMeSubtitleStyled>
-      {paragr}
+      <WrapperStyled>
+        <Header lightColor header={header} />
+        <AboutMeSubtitleStyled>
+          <img src={img} />
+          <Subheader lightColor subheader={subheader}></Subheader>
+        </AboutMeSubtitleStyled>
+        {paragr}
+      </WrapperStyled>
     </AboutMeStyled>
   )
 }
