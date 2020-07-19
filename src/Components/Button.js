@@ -12,12 +12,22 @@ const ButtonStyled = styled.button`
   color: ${props => (props.loadMore ? "#4258b8" : "white")};
   background-color: ${props => (props.loadMore ? "white" : "#4258b8")};
   border-radius: 25px;
+  cursor: pointer;
   @media ${device.tablet} {
     max-width: 300px;
   }
+  @media ${device.laptop} {
+    max-width: ${props => (props.menu ? "150px" : "300px")};
+    padding: ${props => (props.menu ? "1vh 0;" : null)};
+    margin: ${props => (props.menu ? "0 2vh;" : null)};
+  }
 `
-const Button = ({ button, loadMore }) => {
-  return <ButtonStyled loadMore={loadMore}>{button}</ButtonStyled>
+const Button = ({ button, loadMore, menu }) => {
+  return (
+    <ButtonStyled menu={menu} loadMore={loadMore}>
+      {button}
+    </ButtonStyled>
+  )
 }
 
 export default Button
