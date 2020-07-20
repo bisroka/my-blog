@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const StyledHamburger = styled.div`
   display: flex;
@@ -15,6 +16,10 @@ const StyledHamburger = styled.div`
   z-index: 3;
   padding: 1px;
   cursor: pointer;
+
+  @media ${device.laptop} {
+    display: none;
+  }
 
   div {
     width: 6vh;

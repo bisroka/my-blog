@@ -8,6 +8,10 @@ const ActivityStyled = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${device.laptop} {
+    max-width: 30%;
+    margin: 5vh 1vw;
+  }
 `
 const ActivityDescriptionStyle = styled.div`
   display: flex;
@@ -33,7 +37,7 @@ const ActivityDescriptionStyle = styled.div`
     }
   }
   p {
-    @media ${device.tablet} {
+    @media ${device.laptop} {
       font-size: 3vh;
     }
   }
@@ -44,6 +48,9 @@ const ActivityImgStyle = styled.img`
   margin: 3vh 0;
   @media ${device.tablet} {
     height: 50vw;
+  }
+  @media ${device.laptop} {
+    height: 20vw;
   }
 `
 

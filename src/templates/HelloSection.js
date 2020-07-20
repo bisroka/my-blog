@@ -30,6 +30,10 @@ const HeaderStyled = styled.h2`
   @media ${device.tablet} {
     font-size: 7vh;
   }
+  @media ${device.laptop} {
+    font-size: 9vh;
+    max-width: 40vw;
+  }
 `
 const HiImg = styled.img`
   position: absolute;
@@ -41,16 +45,28 @@ const HiImg = styled.img`
     width: 50vh;
     height: 50vh;
   }
+  @media ${device.laptop} {
+    width: 75vh;
+    height: 75vh;
+  }
+`
+const WrapperStyled = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 `
 
 const HelloSection = ({ header, images }) => {
   return (
     <HelloSectionContainer>
-      <HelloContainer>
-        <TriangleImg src={images.triangle}></TriangleImg>
-        <HeaderStyled>{header}</HeaderStyled>
-      </HelloContainer>
-      <HiImg src={images.hi2}></HiImg>
+      <WrapperStyled>
+        <HelloContainer>
+          <TriangleImg src={images.triangle}></TriangleImg>
+          <HeaderStyled>{header}</HeaderStyled>
+        </HelloContainer>
+        <HiImg src={images.hi2}></HiImg>
+      </WrapperStyled>
     </HelloSectionContainer>
   )
 }

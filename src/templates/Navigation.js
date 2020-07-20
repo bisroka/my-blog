@@ -6,8 +6,13 @@ import Hamburger from "../Components/Hamburger"
 
 const NavBar = styled.header`
   display: block;
+  position: relative;
   width: 100%;
   height: 5vh;
+  top: 0;
+  left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 `
 
 class Navigation extends Component {
@@ -35,16 +40,3 @@ class Navigation extends Component {
 }
 
 export default Navigation
-
-// const Navigation = ({ button1, button2, button3, click }) => {
-//   return (
-//     <>
-//       <NavBar>
-//         <Hamburger click={click} />
-//         <Menu button1={button1} button2={button2} button3={button3} />
-//       </NavBar>
-//     </>
-//   )
-// }
-
-// export default Navigation

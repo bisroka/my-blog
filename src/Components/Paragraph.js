@@ -17,10 +17,11 @@ const NewsParagraphStyle = styled.p`
 const ContactParagraphStyled = styled.div`
   position: absolute;
   width: 45vw;
-  right: 5vw;
+  left: 20vw;
   font-size: 20px;
   @media ${device.tablet} {
-    font-size: 4vh;
+    font-size: 3.5vh;
+    top: 15vh;
   }
 `
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import bans from "../assets/images/bans.png"
 import calm from "../assets/images/calm.png"
 import github from "../assets/images/github.png"
@@ -120,7 +120,6 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
      
     }
-
 `
 
 class IndexPage extends Component {
