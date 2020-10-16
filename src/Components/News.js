@@ -1,43 +1,19 @@
 import React from "react"
-import styled from "styled-components"
-
-import Subheader from "../Components/Subheader"
-import Paragraph from "../Components/Paragraph"
-
+import { Link } from "gatsby"
 import Button from "../Components/Button"
 
-import { device } from "../utils/device"
+import { StyledNewsCard, StyledSubheader, StyledImage, StyledParagraph } from "./styled-components/index.styledComponents"
 
-const NewsStyled = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 75vw;
-  background-color: white;
-  margin: 5vh 1vw;
-  @media ${device.laptop} {
-    width: 25vw;
-  }
-`
-const NewsImgStyle = styled.img`
-  display: block;
-  background: grey;
-  width: 75vw;
-  height: 50vw;
-  @media ${device.laptop} {
-    width: 25vw;
-    height: 25vw;
-  }
-`
-
-const News = ({ postTitle, postDescription, button }) => {
+const News = ({ postTitle, button, postImg, link }) => {
   return (
-    <NewsStyled>
-      <NewsImgStyle></NewsImgStyle>
-      <Subheader subheader={postTitle} />
-      <Paragraph paragraph={postDescription} section="news" />
-      <Button button={button} />
-    </NewsStyled>
+    <StyledNewsCard>
+      <Link to={link}>
+          <StyledImage newsCard src={postImg ? postImg.url : null}></StyledImage>
+          <StyledSubheader lightColor >{postTitle}</StyledSubheader>
+          {/* <StyledParagraph paragraph={postDescription} section="news" /> */}
+          <Button button={button} />
+      </Link>
+      </StyledNewsCard>
   )
 }
 

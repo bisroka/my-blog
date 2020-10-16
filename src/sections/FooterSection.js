@@ -17,7 +17,7 @@ const FooterStyled = styled.footer`
   }
 `
 
-const Footer = ({ footerContent }) => {
+const FooterSection = ({ footerContent }) => {
   return (
     <FooterStyled>
       <p>{footerContent}</p>
@@ -25,4 +25,4 @@ const Footer = ({ footerContent }) => {
   )
 }
 
-export default Footer
+export default FooterSection
