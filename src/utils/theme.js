@@ -2,14 +2,25 @@ import { createGlobalStyle } from "styled-components"
 
 export const theme = {
     colors: {
-        primary: "",
-        gray: "",
-        white: "",
-        black: "",
+        primary: "#4258b8",
+        white: "#FFFFFF",
+        lightcolor: "#AAAAAA", 
+        gray: "6b6b6b",
+        black: "#000000",
     },
     fontSize: {
-        white: ""
-    }
+        s: "1vh",
+        m: "1.5vh",
+        l: "2.5vh",
+        xl: "5vh",
+
+    },
+    fontFamily: {
+        main: "Charter",
+        buttons: "Impact",
+        thirdy: "",
+    },
+
 }
 
 export const GlobalStyle = createGlobalStyle`

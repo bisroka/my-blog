@@ -7,7 +7,7 @@ export const StyledMenu = styled.nav`
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};;
   width: 100vw;
   height: 100vh;
   z-index: 2;

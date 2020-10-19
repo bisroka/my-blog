@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { GlobalStyle } from "../utils/theme"
+import { GlobalStyle, theme } from "../utils/theme"
+import { ThemeProvider } from "styled-components"
 import Navigation from "../sections/Navigation"
 import Articles from "../blog/articles"
 import { pageContent } from "../utils/pageContent"
@@ -9,8 +10,10 @@ const Blog = ({ data }) => {
   return (
     <>
       <GlobalStyle />
-      <Navigation buttons={pageContent.buttons.navButtons} />
-      <Articles button1={pageContent.buttons.showPostButton} data={data} />
+      <ThemeProvider theme={theme}>
+        <Navigation buttons={pageContent.buttons.navButtons} />
+        <Articles button1={pageContent.buttons.showPostButton} data={data} />
+      </ThemeProvider>
     </>
   )
 }

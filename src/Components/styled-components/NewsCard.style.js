@@ -1,16 +1,17 @@
 import styled from "styled-components"
 import { device } from "../../utils/device"
+import { theme } from "../../utils/theme"
 
 export const StyledNewsCard = styled.article`
   display: flex;
   justify-content: center;
   width: 75vw;
   height: 70vh;
-  background-color: white;
+  background-color: ${props => props.theme.colors.white};;
   margin: 5vh 1vw;
   @media ${device.laptop} {
     width: 25%;
-    height: 65vh;
+    height: 50vh;
   }
   a {
     display: flex;
@@ -19,17 +20,16 @@ export const StyledNewsCard = styled.article`
     justify-content: space-between;
   }
   h3{
-  color: ${props => (props.lightColor ? "#888888" : "#6b6b6b")};
-  font-size: 28px;
+  color: ${props => (props.lightColor ? props.theme.colors.lightColor : props.theme.colors.gray)};
+  font-size: ${props => props.theme.fontSize.l};
   margin: 3vh 0;
   text-align: center;
   @media ${device.tablet} {
-    font-size: 5vh;
-    color: #6b6b6b;
+    font-size: ${props => props.theme.fontSize.xl};
+    color: ${props => props.theme.colors.gray};
   }
-}
-}
-`
+}`
+
 export const StyledNewsImg = styled.img`
   display: block;
   background: grey;
@@ -45,12 +45,11 @@ export const StyledNewsImg = styled.img`
   }
   :hover {
     opacity: 1;
-  }
+  }`
   
-`
 export const StyledLinkWrapper = styled.div``
 export const StyledLinks = {
   textDecoration: "none",
   fontStyle: "normal",
-  fontFamily: "Impact",
+  fontFamily: theme.fontFamily.main,
 }

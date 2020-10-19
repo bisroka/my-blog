@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import styled from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import { device } from "../utils/device"
 import {pageContent} from "../utils/pageContent"
-import { GlobalStyle } from "../utils/theme"
+import { GlobalStyle, theme } from "../utils/theme"
 import Navigation from "../sections/Navigation"
 import FooterSection from "../sections/FooterSection"
 
@@ -13,11 +13,11 @@ const StyledWrapper = styled.section`
   margin: 0 auto;
   min-height: 85vh;
   h1 {
-    color: #6b6b6b;
+    color: ${props => props.theme.colors.gray};
     margin-top: 5vh;
     text-align: center;
-    font-family: Charter;
-    font-size: 48px;
+    font-family: ${props => props.theme.fontFamily.main};
+    font-size: ${props => props.theme.fontSize.xl};
     font-style: normal;
     font-weight: bold;
     letter-spacing: 1.2px;
@@ -25,7 +25,7 @@ const StyledWrapper = styled.section`
   article {
     margin: 0 5vw;
     font-family: sans-serif;
-    font-size: 22px;
+    font-size: ${props => props.theme.fontSize.l};
     font-style: normal;
     font-weight: normal;
     @media ${device.laptop} {
@@ -52,13 +52,15 @@ const Article = ({ data: { article } }) => {
   return (
     <>
       <GlobalStyle />
-      <Navigation buttons={pageContent.buttons.navButtons} />
-      <StyledWrapper>
-        <HeaderImg style={backgroundImage} />
-        <h1>{article.title}</h1>
-        <article>{article.content}</article>
-      </StyledWrapper>
-      <FooterSection footerContent={pageContent.footer.footerContent} />
+      <ThemeProvider theme={theme}>
+        <Navigation buttons={pageContent.buttons.navButtons} />
+        <StyledWrapper>
+          <HeaderImg style={backgroundImage} />
+          <h1>{article.title}</h1>
+          <article>{article.content}</article>
+        </StyledWrapper>
+        <FooterSection footerContent={pageContent.footer.footerContent} />
+      </ThemeProvider>
     </>
   )
 }

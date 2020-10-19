@@ -7,18 +7,10 @@ export const StyledSection = styled.section`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background: transparent
-    linear-gradient(180deg, #4258b8 0%, #eeeeee 50%, #ffffff 100%) 0% 0%
-    no-repeat padding-box;
+    background: ${props => props.white ? props.theme.colors.white : props.theme.colors.primary}
       ${({helloSection})=>
         helloSection && css `
         position: relative;
-        height: 95vh;
+        min-height: 95vh;
       `}
 `
-
-
-// TRZEBA UWZGLĘDNIAĆ RÓŻNE KOLORY BACKGROUNDÓW
-// const BlogStyled = styled.section`
-//   background-color: #4258b8;
-// `

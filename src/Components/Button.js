@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import {StyledButton} from "./styled-components/Button.style"
+import { StyledButton } from "./styled-components/Button.style"
 
 const Button = ({ button, loadMore, menu, click, link }) => {
   return (

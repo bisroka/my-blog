@@ -7,6 +7,7 @@ export const StyledWrapper = styled.div`
   align-items: center;
   flex-direction: ${({row})=> row ? "row" : "column"};  
   justify-content: center;
+  flex-wrap: wrap;
   @media ${device.laptop} {
     display: flex;
     flex-direction: ${({column})=> column ? "column" : "row"};  

@@ -6,13 +6,13 @@ const FooterStyled = styled.footer`
   height: 5vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #4258b8;
+  background-color: ${props => props.theme.colors.primary};
   p {
-    font-size: 12px;
+    font-size: ${props => props.theme.fontSize.s};
     text-align: center;
-    color: white;
+    color: ${props => props.theme.colors.white};;
     @media ${device.tablet} {
-      font-size: 1.5vh;
+      font-size: ${props => props.theme.fontSize.m};
     }
   }
 `

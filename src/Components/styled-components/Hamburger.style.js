@@ -4,14 +4,14 @@ import { device } from "../../utils/device"
 export const StyledHamburger = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.white};
   width: 7vh;
   height: 7vh;
   top: 5vw;
   right: 5vw;
   align-items: center;
   position: absolute;
-  border: 1px solid black;
+  border: 1px solid ${props => props.theme.colors.black};
   border-radius: 25%;
   z-index: 3;
   padding: 1px;
@@ -25,7 +25,7 @@ export const StyledHamburger = styled.div`
     width: 6vh;
     height: 1vh;
     position: relative;
-    background: black;
+    background: ${props => props.theme.colors.black};
     transition: transform 0.5s ease;
     ::before,
     ::after {
@@ -34,7 +34,7 @@ export const StyledHamburger = styled.div`
       position: absolute;
       content: "";
       display: block;
-      background: black;
+      background: ${props => props.theme.colors.black};
       transition: transform 0.5s ease;
     }
     ::before {

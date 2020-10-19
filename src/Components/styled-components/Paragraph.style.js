@@ -6,16 +6,16 @@ export const StyledParagraph = styled.p`
     section==="news" &&
     css`
      text-align: center;
-  font-size: 25px;
+  font-size: ${props => props.theme.fontSize.l};
     `}
     ${({ section }) =>
     section === "aboutme" &&
     css`
       margin: 1vh 0vh;
       padding: 0 5vh;
-      font-size: 2vh;
+      font-size: ${props => props.theme.fontSize.l};
   @media ${device.tablet} {
-    font-size: 4vh;
+    font-size: ${props => props.theme.fontSize.xl};
   }
     `}
     ${({ section }) =>
@@ -25,13 +25,13 @@ export const StyledParagraph = styled.p`
       width: 45vw;
       left: 45vw;
       top: 15vh;
-      font-size: 20px;
+      font-size: ${props => props.theme.fontSize.l};
       @media ${device.tablet} {
-        font-size: 3.5vh;
+        font-size: ${props => props.theme.fontSize.xl};
         top: 15vh;
       }
       @media ${device.laptop} {
-        font-size: 3.5vh;
+        font-size: ${props => props.theme.fontSize.l};
         top: 15vh;
         left: 20vw;
       }

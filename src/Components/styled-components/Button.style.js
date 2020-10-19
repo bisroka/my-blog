@@ -7,9 +7,9 @@ export const StyledButton = styled.button`
   max-width: 250px;
   margin: 3vh 0;
   padding: 2vh 0;
-  font-size: 25px;
-  font-family: "Impact";
-  background-color: ${props => (props.loadMore ? "white" : "#4258b8")};
+  font-size: ${props => props.theme.fontSize.l};
+  font-family: ${props => props.theme.fontFamily.buttons};;
+  background-color: ${props => (props.loadMore ? props.theme.colors.white : props.theme.colors.primary)};
   border-radius: 25px;
   cursor: pointer;
   opacity: 0.9;
@@ -19,7 +19,7 @@ export const StyledButton = styled.button`
   }
   a {
     text-decoration: none;
-    color: ${props => (props.loadMore ? "#4258b8" : "white")};
+    color: ${props => (props.loadMore ? props.theme.colors.primary : props.theme.colors.white)};
   }
   @media ${device.tablet} {
     max-width: 300px;

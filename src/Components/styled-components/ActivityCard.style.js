@@ -32,23 +32,23 @@ export const StyledActivityCard = styled.div`
     width: 100%;
     min-height: 280px;
     text-align: center;
-    font-size: 25px;
-    color: white;
-    background-color: #4258b8;
+    font-size: ${props => props.theme.fontSize.l}
+    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.primary};
     border-radius: 38px;
     @media ${device.tablet} {
         padding: 5vh 5vh;
         max-width: 50vh;
     }
     h3 {
-    color: white;
+    color: ${props => props.theme.colors.white};;
     @media ${device.tablet} {
-        font-size: 5vh;
+        font-size: ${props => props.theme.fontSize.xl};
         }
     }
     p {
     @media ${device.laptop} {
-        font-size: 3vh;
+        font-size: ${props => props.theme.fontSize.l};
         }
     }
 }`
