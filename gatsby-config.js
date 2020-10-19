@@ -1,3 +1,5 @@
+import API_TOKEN from "./apiToken"
+
 module.exports = {
   siteMetadata: {
     title: `Blog-bansera`,
@@ -8,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: `45cfd78ae2b7c74b052f4af5b25569`,
+        apiToken: API_TOKEN,
         preview: false,
         disableLiveReload: false,
       },
