@@ -1,4 +1,4 @@
-import API_TOKEN from "./apiToken"
+const { API_TOKEN } = require("./apiToken");
 
 module.exports = {
   siteMetadata: {
@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-datocms`,
       options: {
-        apiToken: API_TOKEN,
+        apiToken: API_TOKEN ,
         preview: false,
         disableLiveReload: false,
       },
