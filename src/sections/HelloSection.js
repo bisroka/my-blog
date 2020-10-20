@@ -1,13 +1,16 @@
 import React from "react"
 
-import { StyledSection, StyledHeader, StyledWrapper, StyledImage} from "../Components/styled-components/index.styledComponents"
+import { StyledSection, StyledHeader,StyledSubheader, StyledWrapper, StyledImage} from "../Components/styled-components/index.styledComponents"
 
 
-const HelloSection = ({ header, img }) => {
+const HelloSection = ({ header,subheader, img }) => {
   return (
     <StyledSection helloSection>
-      <StyledWrapper helloContainer>
-        <StyledHeader>{header}</StyledHeader>
+      <StyledWrapper>
+        <StyledWrapper helloSection column>
+          <StyledHeader helloSection>{header}</StyledHeader>
+          <StyledSubheader>{subheader}</StyledSubheader>
+        </StyledWrapper>
         <StyledImage src={img} hello/>
       </StyledWrapper>
     </StyledSection>

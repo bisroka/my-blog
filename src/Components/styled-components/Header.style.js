@@ -6,8 +6,11 @@ export const StyledHeader = styled.h2`
   margin-top: 5vh;
   text-align: center;
   font-family: ${props => props.theme.fontFamily.main};;
-  font-size: ${props => props.theme.fontSize.l};
+  font-size: ${props => props.helloSection ? props.theme.fontSize.xl : props.theme.fontSize.l};
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
   @media ${device.tablet} {
-    font-size: ${props => props.theme.fontSize.xl};
+    font-size: ${props => props.helloSection ? props.theme.fontSize.xxl : props.theme.fontSize.xl};
   }
 `

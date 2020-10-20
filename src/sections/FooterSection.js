@@ -10,7 +10,7 @@ const FooterStyled = styled.footer`
   p {
     font-size: ${props => props.theme.fontSize.s};
     text-align: center;
-    color: ${props => props.theme.colors.white};;
+    color: ${props => props.theme.colors.gray};;
     @media ${device.tablet} {
       font-size: ${props => props.theme.fontSize.m};
     }

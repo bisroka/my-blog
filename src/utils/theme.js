@@ -2,17 +2,18 @@ import { createGlobalStyle } from "styled-components"
 
 export const theme = {
     colors: {
-        primary: "#4258b8",
+        primary: "#D8E8F9",
         white: "#FFFFFF",
         lightcolor: "#AAAAAA", 
-        gray: "6b6b6b",
+        gray: "#6b6b6b",
         black: "#000000",
     },
     fontSize: {
         s: "1vh",
         m: "1.5vh",
-        l: "2.5vh",
+        l: "3vh",
         xl: "5vh",
+        xxl: "10vh",
 
     },
     fontFamily: {
@@ -33,10 +34,6 @@ export const GlobalStyle = createGlobalStyle`
     body, h1,h2,h3,h4,h5,h6{
         margin:0;
         padding:0;
-        font-family: "Charter";
-        font-weight: 100;
-        font-style: italic;
-        color: #6b6b6b;
     }
     *, *::before, *::after{
         box-sizing: border-box;
@@ -46,10 +43,15 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
 
 }
+p{
+    font-style: normal;
+}
 a {
         text-decoration: none;
         font-style: normal;
-        font-family: "Impact";
+        color: #6b6b6b;
     }
-
+    .aboutMe__container--paragraph{
+        max-width: 600px;
+    }
 `

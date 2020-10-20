@@ -3,7 +3,8 @@ import { images } from "./images"
 export const pageContent = {
     hello: {
       header:
-        "Witam Cię Na mojej stronie Mam nadzieję, Że znajdziesz dla siebie Coś ciekawego",
+        "Witam Cię!",
+      subheader: "Na mojej stronie Mam nadzieję, Że znajdziesz dla siebie Coś ciekawego",
       img:  images.hi2,
     },
     aboutMe: {
@@ -21,11 +22,11 @@ export const pageContent = {
           content:
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis repellat modi fuga nam a aut ad ratione, accusantium, iste, exercitationem quia! Accusamus est delectus, soluta nulla expedita provident quasi.",
         },
-        {
-          id: 3,
-          content:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis repellat modi fuga nam a aut ad ratione, accusantium, iste, exercitationem quia! Accusamus est delectus, soluta nulla expedita provident quasi.",
-        },
+        // {
+        //   id: 3,
+        //   content:
+        //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis repellat modi fuga nam a aut ad ratione, accusantium, iste, exercitationem quia! Accusamus est delectus, soluta nulla expedita provident quasi.",
+        // },
       ],
     },
     myFreeTime: {

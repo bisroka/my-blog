@@ -8,7 +8,7 @@ export const StyledActivityCard = styled.div`
     flex-direction: column;
     align-items: center;
     @media ${device.laptop} {
-    max-width: 30%;
+    max-width: 25%;
     margin: 5vh 1vw;
   } 
 
@@ -17,10 +17,10 @@ export const StyledActivityCard = styled.div`
     height: 250px;
     margin: 3vh 0;
     @media ${device.tablet} {
-        height: 50vw;
+        max-width: 55%;
     }
     @media ${device.laptop} {
-        height: 20vw;
+        max-width: 55%;
     }
   } 
     .description{
@@ -32,18 +32,23 @@ export const StyledActivityCard = styled.div`
     width: 100%;
     min-height: 280px;
     text-align: center;
-    font-size: ${props => props.theme.fontSize.l}
-    color: ${props => props.theme.colors.white};
+    font-size: ${props => props.theme.fontSize.l};
+    color: ${props => props.theme.colors.gray};
+    font-style: normal;
     background-color: ${props => props.theme.colors.primary};
     border-radius: 38px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
     @media ${device.tablet} {
-        padding: 5vh 5vh;
+        padding: 1.5vh 1.5vh;
         max-width: 50vh;
     }
     h3 {
-    color: ${props => props.theme.colors.white};;
+    color: ${props => props.theme.colors.gray};
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
     @media ${device.tablet} {
-        font-size: ${props => props.theme.fontSize.xl};
+        font-size: ${props => props.theme.fontSize.l};
         }
     }
     p {

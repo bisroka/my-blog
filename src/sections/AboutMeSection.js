@@ -7,20 +7,22 @@ const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
     <StyledParagraph
       key={paragraph.id}
       section="aboutMe"
+      className="aboutMe__container--paragraph"
     >{paragraph.content}</StyledParagraph>
   ))
 
   return (
-    <StyledSection>
+    <StyledSection white>
       <StyledWrapper column>
-        <StyledHeader lightColor >{header}</StyledHeader>
+        <StyledHeader>{header}</StyledHeader>
         <StyledArticle>
-          <StyledImage src={img} circle/>
-          <StyledSubheader lightColor >{subheader}</StyledSubheader>
-        </StyledArticle>
-        <StyledWrapper column>
+          <StyledImage src={img}/>
+          <StyledWrapper column>
+          <StyledSubheader>{subheader}</StyledSubheader>
           {paragr}
         </StyledWrapper>
+        </StyledArticle>
+       
       </StyledWrapper>
     </StyledSection>
   )

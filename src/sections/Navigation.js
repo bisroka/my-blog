@@ -7,7 +7,7 @@ import Hamburger from "../Components/Hamburger"
 
 const NavBar = styled.header`
   display: block;
-  background-color: ${props => props.theme.colors.white};
+  background-color: ${props => props.theme.colors.primary};
   position: relative;
   width: 100%;
   height: 12vh;

@@ -21,9 +21,11 @@ const BlogSection = ({ header, button1, button2, data, limit, click }) => {
   return (
     <StyledSection>
       <StyledWrapper column>
-        <StyledHeader lightColor >{header}</StyledHeader>
-        <StyledWrapper row>{newsToShow}</StyledWrapper>
-      <Button loadMore button={button2} click={click} />
+        <StyledHeader>{header}</StyledHeader>
+          <StyledWrapper row blogSection>
+            {newsToShow}
+          </StyledWrapper>
+        <Button button={button2} click={click} />
       </StyledWrapper>
     </StyledSection>
   )

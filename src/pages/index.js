@@ -42,6 +42,7 @@ class IndexPage extends Component {
           <StyledPageWrapper>
             <HelloSection
               header={pageContent.hello.header}
+              subheader={pageContent.hello.subheader}
               img={pageContent.hello.img}
               />
             <AboutMeSection
