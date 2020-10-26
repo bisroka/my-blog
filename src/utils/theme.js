@@ -19,7 +19,7 @@ export const theme = {
     fontFamily: {
         main: "Charter",
         buttons: "Impact",
-        thirdy: "",
+        paragraph: "Helvatica, Arial, sans-serif",
     },
 
 }
