@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 import { device } from "../../utils/device"
 
 export const StyledParagraph = styled.p`
-  font-family: ${props => props.theme.fontFamily.main};
+  font-family: ${props => props.theme.fontFamily.paragraph};
   font-size: ${props => props.theme.fontSize.l};
   color: ${props => props.theme.colors.gray}
    ${({ section }) =>
@@ -19,10 +19,11 @@ export const StyledParagraph = styled.p`
     ${({ section }) =>
     section === "contact" &&
     css`
+      display: block;
       position: absolute;
-      width: 45vw;
-      left: 45vw;
-      top: 15vh;
+      width: 50vw;
+      right: 5vw;
+      top: 0vh;
       @media ${device.tablet} {
         font-size: ${props => props.theme.fontSize.l};
       }

@@ -7,7 +7,7 @@ export const StyledSection = styled.section`
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     background: ${props => props.white ? props.theme.colors.white : props.theme.colors.primary};
       ${({helloSection})=>
         helloSection && css `
@@ -16,5 +16,9 @@ export const StyledSection = styled.section`
       align-items: center;
       justify-content: center;
         min-height: 95vh;
+      `}
+      ${({articleSection}) => 
+      articleSection && css `
+      min-height: 20vh;
       `}
 `

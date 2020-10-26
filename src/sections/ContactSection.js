@@ -6,7 +6,7 @@ const ContactSection = ({ header, subheader, img, contactPictures }) => {
   return (
     <StyledFooter contact>
         <StyledHeader>{header}</StyledHeader>
-       <StyledWrapper>
+       <StyledWrapper contactSection>
           <StyledParagraph section="contact" >{subheader}</StyledParagraph>
           <ContactIcons contactPictures={contactPictures} />
        </StyledWrapper>

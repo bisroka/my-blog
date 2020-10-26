@@ -5,8 +5,8 @@ export const StyledNewsCard = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 75%;
-  height: 70vh;
+  width: 85%;
+  /* height: 70vh; */
   background-color: ${props => props.theme.colors.white};
   margin: 5vh 1vw;
   @media ${device.laptop} {

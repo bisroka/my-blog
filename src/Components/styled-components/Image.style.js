@@ -7,7 +7,7 @@ export const StyledImage = styled.img`
         width: 30vw;
         border-radius: ${({circle})=>circle? "50%":"none"};
     @media ${device.tablet} {
-        width: 50vw;
+        width: 20vw;
     }
     @media ${device.laptop} {
         width: 15vw;
@@ -24,6 +24,8 @@ export const StyledImage = styled.img`
     `}
     ${({hello}) => 
     hello && css `
+          width: 80vw;
+            height: 80vw;
         @media ${device.tablet} {
             width: 50vh;
             height: 50vh;
@@ -37,16 +39,14 @@ export const StyledImage = styled.img`
         newsCard && css `
         display: block;
         background: grey;
-        max-height: 200px;
-        max-width: 100%;
+        height: 200px;
+        width: 100%;
         object-fit: cover;
         opacity: 0.7;
         transition: 0.3s;
         @media ${device.laptop} {
-            /* height: auto; */
-            max-width: 100%;
-            /* object-fit: cover; */
-    }
+           max-width: 100%;
+        }
         :hover {
             opacity: 1;
         }`}

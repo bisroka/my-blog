@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { device } from "../../utils/device"
 
-export const StyledActivityCard = styled.div`
+export const StyledActivityCard = styled.article`
     width: 85%;
     margin: 5vh 0;
     display: flex;
@@ -28,15 +28,15 @@ export const StyledActivityCard = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3vh;
+    padding: 5vh 3vh;
     width: 100%;
-    min-height: 280px;
+    /* min-height: 280px; */
     text-align: center;
     font-size: ${props => props.theme.fontSize.l};
     color: ${props => props.theme.colors.gray};
     font-style: normal;
     background-color: ${props => props.theme.colors.primary};
-    border-radius: 38px;
+    border-radius: 25px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
     @media ${device.tablet} {
         padding: 1.5vh 1.5vh;

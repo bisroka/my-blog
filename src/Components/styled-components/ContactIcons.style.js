@@ -3,16 +3,17 @@ import { device } from "../../utils/device"
 
 export const StyledContactIcons = styled.div`
   position: absolute;
+  display: block;
   width: 45vw;
   right: 5vw;
-  top: 30vh;
+  bottom: 3vh;
   @media ${device.tablet} {
     right: 5vw;
-    top: 30vh;
+    bottom: 3vh;
   }
   @media ${device.laptop} {
-    top: 25vh;
     right: 0;
+    bottom: 5vh;
   }
   
   img {
