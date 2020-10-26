@@ -6,37 +6,18 @@ import {pageContent} from "../utils/pageContent"
 import { GlobalStyle, theme } from "../utils/theme"
 import Navigation from "../sections/Navigation"
 import FooterSection from "../sections/FooterSection"
+import { StyledParagraph, StyledHeader, StyledSection } from "../Components/styled-components/index.styledComponents"
 
 
 const StyledWrapper = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   min-height: 85vh;
-  h1 {
-    color: ${props => props.theme.colors.gray};
-    margin-top: 5vh;
-    text-align: center;
-    font-family: ${props => props.theme.fontFamily.main};
-    font-size: ${props => props.theme.fontSize.xl};
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-  }
-  article {
-    margin: 0 5vw;
-    font-family: sans-serif;
-    font-size: ${props => props.theme.fontSize.l};
-    font-style: normal;
-    font-weight: normal;
-    @media ${device.laptop} {
-      margin: 3vh 3vw;
-    }
-  }
 `
 
 const HeaderImg = styled.div`
   margin: 5vh auto 0;
-  width: 100%;
+  width: 80%;
   height: 30vh;
   background-attachment: fixed;
   background-size: cover;
@@ -54,10 +35,12 @@ const Article = ({ data: { article } }) => {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Navigation buttons={pageContent.buttons.navButtons} />
-        <StyledWrapper>
+        <StyledSection articleSection>
+          <StyledHeader>{article.title}</StyledHeader>
           <HeaderImg style={backgroundImage} />
-          <h1>{article.title}</h1>
-          <article>{article.content}</article>
+        </StyledSection>
+        <StyledWrapper>
+          <StyledParagraph>{article.content}</StyledParagraph>
         </StyledWrapper>
         <FooterSection footerContent={pageContent.footer.footerContent} />
       </ThemeProvider>
