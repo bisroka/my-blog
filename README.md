@@ -8,7 +8,7 @@ I wrote some posts about my life - I hope it will help some people, who is gonna
 <br>
 
 ##DETAILS  <br>
-I used <a href="https://gatsbyjs.com">Gatsby.js</a> with <a href="https://www.gatsbyjs.com/plugins/gatsby-source-datocms/">datoCMS</a> plugin, <a href="https://www.datocms.com/">datoCMS</a> and <a href="https://graphql.org/">GraphQL</a>. 
+I used <a href="https://gatsbyjs.com">Gatsby.js</a> with <a href="https://www.gatsbyjs.com/plugins/gatsby-source-datocms/">datoCMS plugin (gatsby-source-datocms)</a>, <a href="https://www.datocms.com/">datoCMS</a> and <a href="https://graphql.org/">GraphQL</a>. 
 I also used <a href="https://styled-components.com/">styled-components</a> library.
 
 ##ANIMATIONS
