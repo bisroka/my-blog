@@ -30,6 +30,7 @@ export const StyledActivityCard = styled.article`
     justify-content: center;
     padding: 5vh 3vh;
     width: 100%;
+   
     /* min-height: 280px; */
     text-align: center;
     font-size: ${props => props.theme.fontSize.l};
@@ -41,6 +42,7 @@ export const StyledActivityCard = styled.article`
     @media ${device.tablet} {
         padding: 1.5vh 1.5vh;
         max-width: 50vh;
+        height: 40vh;
     }
     h3 {
     color: ${props => props.theme.colors.gray};
