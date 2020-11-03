@@ -9,5 +9,6 @@ export const StyledSubheader = styled.h3`
   text-align: center;
   @media ${device.tablet} {
     font-size: ${props => props.theme.fontSize.l};
+    max-width: 45vw;
   }
 `

@@ -13,8 +13,8 @@ const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
 
   return (
     <StyledSection white>
-      <StyledWrapper column>
         <StyledHeader>{header}</StyledHeader>
+      <StyledWrapper column>
         <StyledArticle>
           <StyledImage src={img}/>
           <StyledWrapper column>
