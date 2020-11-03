@@ -4,29 +4,24 @@ export const pageContent = {
     hello: {
       header:
         "Witam Cię!",
-      subheader: "Na mojej stronie Mam nadzieję, Że znajdziesz dla siebie Coś ciekawego",
+      subheader: "Mam nadzieję, że znajdziesz coś interesującego dla siebie!",
       img:  images.hi2,
     },
     aboutMe: {
       header: "Poznajmy się",
-      subheader: "Jestem Bartek, a to mój blog o tym, jak staję się programistą",
+      subheader: "Jestem Bartek	, stworzyłem to miejsce, aby gromadzić i dzielić się swoimi notatkami, przemyśleniami  i doświadczeniem z tematyki programowania. Może znajdziesz coś dla siebie i wyniesiesz z tej strony wartość dla siebie. Mam nadzieję!",
       img: images.bans,
       paragraphes: [
         {
           id: 1,
           content:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis repellat modi fuga nam a aut ad ratione, accusantium, iste, exercitationem quia! Accusamus est delectus, soluta nulla expedita provident quasi.",
+            "Obecnie programuję strony internetowe, współtworzę aplikację webową o tematyce zdrowia, szukam nowych wyzwań, a ten blog jest właśnie takim wyzwaniem!",
         },
         {
           id: 2,
           content:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis repellat modi fuga nam a aut ad ratione, accusantium, iste, exercitationem quia! Accusamus est delectus, soluta nulla expedita provident quasi.",
+            "Zapraszam Cię do zapoznania się z moimi wpisami.",
         },
-        // {
-        //   id: 3,
-        //   content:
-        //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia debitis repellat modi fuga nam a aut ad ratione, accusantium, iste, exercitationem quia! Accusamus est delectus, soluta nulla expedita provident quasi.",
-        // },
       ],
     },
     myFreeTime: {
