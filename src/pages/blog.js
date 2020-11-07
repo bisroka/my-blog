@@ -6,7 +6,7 @@ import Navigation from "../sections/Navigation"
 import Articles from "../blog/articles"
 import { pageContent } from "../utils/pageContent"
 
-const Blog = ({ data }) => {
+const BlogPage = ({ data }) => {
   return (
     <>
       <GlobalStyle />
@@ -35,4 +35,4 @@ export const query = graphql`
   }
 `
 
-export default Blog
+export default BlogPage

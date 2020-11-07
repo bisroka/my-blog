@@ -1,4 +1,3 @@
-import triangle from "../assets/svg/triangle.svg"
 import hi2 from "../assets/svg/hi2.svg"
 import bans from "../assets/svg/bans.svg"
 import calm from "../assets/svg/calm.svg"

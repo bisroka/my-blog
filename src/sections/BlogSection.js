@@ -12,7 +12,7 @@ const BlogSection = ({ header, button1, button2, data, limit, click }) => {
       button={button1}
       postTitle={article.node.title}
       postDescription={article.node.content}
-      postImg={article.node.thumbnail}
+      thumbnail={article.node.thumbnail}
       slug={article.node.slug}
       link={`blog/${article.node.slug}`}
     />
