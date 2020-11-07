@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing gatsby-node given data when querying for chapters then runs a graphql query 1`] = `
+"
+    {
+      allDatoCmsArticle {
+        edges {
+          node {
+            title
+            slug
+            content
+            thumbnail {
+              url
+            }
+          }
+        }
+      }
+    }
+  "
+`;
+
+exports[`testing gatsby-node given data when querying for edges then runs a graphql query 1`] = `
+"
+    {
+      allDatoCmsArticle {
+        edges {
+          node {
+            title
+            slug
+            content
+            thumbnail {
+              url
+            }
+          }
+        }
+      }
+    }
+  "
+`;

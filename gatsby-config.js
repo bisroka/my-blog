@@ -7,6 +7,11 @@ module.exports = {
     author: `@BartoszSroka`,
   },
   plugins: [
+    `gatsby-plugin-testing`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-datocms`,
       options: {
@@ -15,7 +20,6 @@ module.exports = {
         disableLiveReload: false,
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,8 +27,6 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -70,6 +72,5 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-styled-components`,
   ],
 }

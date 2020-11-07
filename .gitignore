@@ -71,3 +71,6 @@ yarn-error.log
 
 # datoCMS API TOKEN
 apiToken.js
+
+#static-queries
+.testing-static-queries.json
