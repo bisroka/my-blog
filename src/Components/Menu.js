@@ -1,6 +1,7 @@
 import React from "react"
 import Button from "./Button"
 import { StyledMenu } from "./styled-components/Menu.style"
+import PropTypes from "prop-types"
 
 const Menu = ({ isVisible, buttons }) => {
   const navButton = buttons.map(button => (
@@ -10,3 +11,8 @@ const Menu = ({ isVisible, buttons }) => {
 }
 
 export default Menu
+
+Menu.propTypes = {
+  isVisible: PropTypes.bool,
+  button: PropTypes.string,
+}; 

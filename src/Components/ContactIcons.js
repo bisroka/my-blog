@@ -1,5 +1,6 @@
 import React from "react"
 import { StyledContactIcons } from "./styled-components/ContactIcons.style"
+import PropTypes from "prop-types"
 
 
 const ContactIcons = ({ contactPictures }) => {
@@ -12,3 +13,13 @@ const ContactIcons = ({ contactPictures }) => {
 }
 
 export default ContactIcons
+
+ContactIcons.propTypes = {
+  contactPictures: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      href: PropTypes.string,
+      src: PropTypes.string
+    })
+  ),
+}; 

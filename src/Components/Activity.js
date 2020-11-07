@@ -1,6 +1,6 @@
 import React from "react"
 import { StyledActivityCard, StyledSubheader, StyledParagraph } from "./styled-components/index.styledComponents"
-
+import PropTypes from "prop-types"
 
 const Activity = ({ img, title, paragraph }) => {
   return (
@@ -15,3 +15,9 @@ const Activity = ({ img, title, paragraph }) => {
 }
 
 export default Activity
+
+Activity.propTypes = {
+  img: PropTypes.string,
+  title: PropTypes.string,
+  paragraph: PropTypes.string
+}; 
