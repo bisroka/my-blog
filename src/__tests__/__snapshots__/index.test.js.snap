@@ -1,0 +1,797 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage renders 1`] = `
+Array [
+  <header
+    className="sc-AxhCb dxbuSR"
+  >
+    <div
+      className="sc-AxiKw ftJckG"
+      onClick={[Function]}
+    >
+      <div />
+    </div>
+    <nav
+      className="sc-AxirZ chPHpp"
+    >
+      <button
+        className="sc-AxjAm JFBzp"
+      >
+        <a
+          href="/aboutMe"
+        >
+          O mnie
+        </a>
+      </button>
+      <button
+        className="sc-AxjAm JFBzp"
+      >
+        <a
+          href="/blog"
+        >
+          Blog
+        </a>
+      </button>
+      <button
+        className="sc-AxjAm JFBzp"
+      >
+        <a
+          href="/contact"
+        >
+          Kontakt
+        </a>
+      </button>
+    </nav>
+  </header>,
+  <main
+    className="sc-fzokOt kXdvdx"
+  >
+    <section
+      className="sc-fzplWN hraMnY"
+    >
+      <div
+        className="sc-fznKkj hFpdfu"
+      >
+        <div
+          className="sc-fznKkj bLPXMd"
+        >
+          <h2
+            className="sc-AxmLO hVmAjl"
+          >
+            Witam Cię!
+          </h2>
+          <h3
+            className="sc-fznyAO fgPxEE"
+          >
+            Mam nadzieję, że znajdziesz coś interesującego dla siebie!
+          </h3>
+        </div>
+        <img
+          className="sc-fzozJi cXPiTT"
+          src="test-file-stub"
+        />
+      </div>
+    </section>
+    <section
+      className="sc-fzplWN gciCyX"
+    >
+      <h2
+        className="sc-AxmLO fSgRNp"
+      >
+        Poznajmy się
+      </h2>
+      <div
+        className="sc-fznKkj clloSK"
+      >
+        <article
+          className="sc-AxgMl fcwHel"
+        >
+          <img
+            className="sc-fzozJi bpPugK"
+            src="test-file-stub"
+          />
+          <div
+            className="sc-fznKkj clloSK"
+          >
+            <h3
+              className="sc-fznyAO fgPxEE"
+            >
+              Jestem Bartek	, stworzyłem to miejsce, aby gromadzić i dzielić się swoimi notatkami, przemyśleniami  i doświadczeniem z tematyki programowania. Może znajdziesz coś dla siebie i wyniesiesz z tej strony wartość dla siebie. Mam nadzieję!
+            </h3>
+            <p
+              className="sc-fzpans bSGumi aboutMe__container--paragraph"
+            >
+              Obecnie programuję strony internetowe, współtworzę aplikację webową o tematyce zdrowia, szukam nowych wyzwań, a ten blog jest właśnie takim wyzwaniem!
+            </p>
+            <p
+              className="sc-fzpans bSGumi aboutMe__container--paragraph"
+            >
+              Zapraszam Cię do zapoznania się z moimi wpisami.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section
+      className="sc-fzplWN gciCyX"
+    >
+      <div
+        className="sc-fznKkj clloSK"
+      >
+        <h2
+          className="sc-AxmLO fSgRNp"
+        >
+          Co robię w wolnym czasie?
+        </h2>
+        <div
+          className="sc-fznKkj hFpdfu"
+        >
+           
+          <article
+            className="sc-AxhUy ePyYLl"
+          >
+            <img
+              src="test-file-stub"
+            />
+            <div
+              className="description"
+            >
+              <h3
+                className="sc-fznyAO fgPxEE"
+              >
+                Rozwijam swój umysł
+              </h3>
+              <p
+                className="sc-fzpans bSGumi"
+              >
+                 - czytam książki, tworzę nowe projekty, rozwijam swoje pomysły.
+              </p>
+            </div>
+          </article>
+          <article
+            className="sc-AxhUy ePyYLl"
+          >
+            <img
+              src="test-file-stub"
+            />
+            <div
+              className="description"
+            >
+              <h3
+                className="sc-fznyAO fgPxEE"
+              >
+                Gram na gitarze
+              </h3>
+              <p
+                className="sc-fzpans bSGumi"
+              >
+                 - byłem nawet kiedyś nauczycielem gry na gitarze! 
+              </p>
+            </div>
+          </article>
+          <article
+            className="sc-AxhUy ePyYLl"
+          >
+            <img
+              src="test-file-stub"
+            />
+            <div
+              className="description"
+            >
+              <h3
+                className="sc-fznyAO fgPxEE"
+              >
+                Dbam o kondycję
+              </h3>
+              <p
+                className="sc-fzpans bSGumi"
+              >
+                 - zdrowy duch w zdrowym ciele! Staram się dbać o swoją kondycję fizyczną.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      className="sc-fzplWN jOcVbR"
+    >
+      <div
+        className="sc-fznKkj clloSK"
+      >
+        <h2
+          className="sc-AxmLO fSgRNp"
+        >
+          Co u mnie słychać?
+        </h2>
+        <div
+          className="sc-fznKkj cNTSAi"
+        >
+          <article
+            className="sc-fzoLsD fPfYqU"
+          >
+            <a
+              href="blog/no-i-siodmy-wpisik"
+            >
+               
+              <img
+                className="sc-fzozJi byXuzH"
+                src="https://www.datocms-assets.com/31772/1595319670-okladkaaa.png"
+              />
+                 
+            </a>
+            <a
+              href="blog/no-i-siodmy-wpisik"
+            >
+               
+              <h3
+                className="sc-fznyAO bZSKYj"
+              >
+                no i siódmy wpisik
+              </h3>
+               
+            </a>
+            <a
+              href="blog/no-i-siodmy-wpisik"
+            >
+                
+              <button
+                className="sc-AxjAm dpLPSn"
+              >
+                <a
+                  href=""
+                >
+                  Więcej
+                </a>
+              </button>
+               
+            </a>
+          </article>
+          <article
+            className="sc-fzoLsD fPfYqU"
+          >
+            <a
+              href="blog/szosty-wpis-przykladowo-testowy"
+            >
+               
+              <img
+                className="sc-fzozJi byXuzH"
+                src="https://www.datocms-assets.com/31772/1595523423-zrzut-ekranu-2020-07-15-o-23-57-53.png"
+              />
+                 
+            </a>
+            <a
+              href="blog/szosty-wpis-przykladowo-testowy"
+            >
+               
+              <h3
+                className="sc-fznyAO bZSKYj"
+              >
+                szósty wpis przykładowo testowy
+              </h3>
+               
+            </a>
+            <a
+              href="blog/szosty-wpis-przykladowo-testowy"
+            >
+                
+              <button
+                className="sc-AxjAm dpLPSn"
+              >
+                <a
+                  href=""
+                >
+                  Więcej
+                </a>
+              </button>
+               
+            </a>
+          </article>
+          <article
+            className="sc-fzoLsD fPfYqU"
+          >
+            <a
+              href="blog/piaty-wpis-przykladowy"
+            >
+               
+              <img
+                className="sc-fzozJi byXuzH"
+                src="https://www.datocms-assets.com/31772/1595676605-obrazek.jpeg"
+              />
+                 
+            </a>
+            <a
+              href="blog/piaty-wpis-przykladowy"
+            >
+               
+              <h3
+                className="sc-fznyAO bZSKYj"
+              >
+                piąty wpis przykładowy
+              </h3>
+               
+            </a>
+            <a
+              href="blog/piaty-wpis-przykladowy"
+            >
+                
+              <button
+                className="sc-AxjAm dpLPSn"
+              >
+                <a
+                  href=""
+                >
+                  Więcej
+                </a>
+              </button>
+               
+            </a>
+          </article>
+        </div>
+        <button
+          className="sc-AxjAm eCNvwl"
+          onClick={[Function]}
+        >
+          <a
+            href=""
+          >
+            Załaduj więcej
+          </a>
+        </button>
+      </div>
+    </section>
+    <footer
+      className="sc-Axmtr kWGnhM"
+    >
+      <h2
+        className="sc-AxmLO fSgRNp"
+      >
+        Kontakt
+      </h2>
+      <div
+        className="sc-fznKkj gYFtRN"
+      >
+        <p
+          className="sc-fzpans fyrPSh"
+        >
+          Napisz do mnie,Lub sprawdź moje profile na innych portalach
+        </p>
+        <div
+          className="sc-AxheI kMspPV"
+        >
+          <a
+            href="https://www.facebook.com/bartosz.sroka4"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sroka-bartosz/"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </a>
+          <a
+            href="https://github.com/bisroka"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </a>
+        </div>
+      </div>
+      <img
+        className="sc-fzozJi jspQwc"
+        src="test-file-stub"
+      />
+    </footer>
+    <footer
+      className="sc-fznZeY dSIpqI"
+    >
+      <p>
+        Strona stworzona przez Bartosza Srokę
+      </p>
+    </footer>
+  </main>,
+]
+`;
+
+exports[`IndexPage renders homepage 1`] = `
+Array [
+  <header
+    className="sc-AxhCb dxbuSR"
+  >
+    <div
+      className="sc-AxiKw ftJckG"
+      onClick={[Function]}
+    >
+      <div />
+    </div>
+    <nav
+      className="sc-AxirZ chPHpp"
+    >
+      <button
+        className="sc-AxjAm JFBzp"
+      >
+        <a
+          href="/aboutMe"
+        >
+          O mnie
+        </a>
+      </button>
+      <button
+        className="sc-AxjAm JFBzp"
+      >
+        <a
+          href="/blog"
+        >
+          Blog
+        </a>
+      </button>
+      <button
+        className="sc-AxjAm JFBzp"
+      >
+        <a
+          href="/contact"
+        >
+          Kontakt
+        </a>
+      </button>
+    </nav>
+  </header>,
+  <main
+    className="sc-fzokOt kXdvdx"
+  >
+    <section
+      className="sc-fzplWN hraMnY"
+    >
+      <div
+        className="sc-fznKkj hFpdfu"
+      >
+        <div
+          className="sc-fznKkj bLPXMd"
+        >
+          <h2
+            className="sc-AxmLO hVmAjl"
+          >
+            Witam Cię!
+          </h2>
+          <h3
+            className="sc-fznyAO fgPxEE"
+          >
+            Mam nadzieję, że znajdziesz coś interesującego dla siebie!
+          </h3>
+        </div>
+        <img
+          className="sc-fzozJi cXPiTT"
+          src="test-file-stub"
+        />
+      </div>
+    </section>
+    <section
+      className="sc-fzplWN gciCyX"
+    >
+      <h2
+        className="sc-AxmLO fSgRNp"
+      >
+        Poznajmy się
+      </h2>
+      <div
+        className="sc-fznKkj clloSK"
+      >
+        <article
+          className="sc-AxgMl fcwHel"
+        >
+          <img
+            className="sc-fzozJi bpPugK"
+            src="test-file-stub"
+          />
+          <div
+            className="sc-fznKkj clloSK"
+          >
+            <h3
+              className="sc-fznyAO fgPxEE"
+            >
+              Jestem Bartek	, stworzyłem to miejsce, aby gromadzić i dzielić się swoimi notatkami, przemyśleniami  i doświadczeniem z tematyki programowania. Może znajdziesz coś dla siebie i wyniesiesz z tej strony wartość dla siebie. Mam nadzieję!
+            </h3>
+            <p
+              className="sc-fzpans bSGumi aboutMe__container--paragraph"
+            >
+              Obecnie programuję strony internetowe, współtworzę aplikację webową o tematyce zdrowia, szukam nowych wyzwań, a ten blog jest właśnie takim wyzwaniem!
+            </p>
+            <p
+              className="sc-fzpans bSGumi aboutMe__container--paragraph"
+            >
+              Zapraszam Cię do zapoznania się z moimi wpisami.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section
+      className="sc-fzplWN gciCyX"
+    >
+      <div
+        className="sc-fznKkj clloSK"
+      >
+        <h2
+          className="sc-AxmLO fSgRNp"
+        >
+          Co robię w wolnym czasie?
+        </h2>
+        <div
+          className="sc-fznKkj hFpdfu"
+        >
+           
+          <article
+            className="sc-AxhUy ePyYLl"
+          >
+            <img
+              src="test-file-stub"
+            />
+            <div
+              className="description"
+            >
+              <h3
+                className="sc-fznyAO fgPxEE"
+              >
+                Rozwijam swój umysł
+              </h3>
+              <p
+                className="sc-fzpans bSGumi"
+              >
+                 - czytam książki, tworzę nowe projekty, rozwijam swoje pomysły.
+              </p>
+            </div>
+          </article>
+          <article
+            className="sc-AxhUy ePyYLl"
+          >
+            <img
+              src="test-file-stub"
+            />
+            <div
+              className="description"
+            >
+              <h3
+                className="sc-fznyAO fgPxEE"
+              >
+                Gram na gitarze
+              </h3>
+              <p
+                className="sc-fzpans bSGumi"
+              >
+                 - byłem nawet kiedyś nauczycielem gry na gitarze! 
+              </p>
+            </div>
+          </article>
+          <article
+            className="sc-AxhUy ePyYLl"
+          >
+            <img
+              src="test-file-stub"
+            />
+            <div
+              className="description"
+            >
+              <h3
+                className="sc-fznyAO fgPxEE"
+              >
+                Dbam o kondycję
+              </h3>
+              <p
+                className="sc-fzpans bSGumi"
+              >
+                 - zdrowy duch w zdrowym ciele! Staram się dbać o swoją kondycję fizyczną.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      className="sc-fzplWN jOcVbR"
+    >
+      <div
+        className="sc-fznKkj clloSK"
+      >
+        <h2
+          className="sc-AxmLO fSgRNp"
+        >
+          Co u mnie słychać?
+        </h2>
+        <div
+          className="sc-fznKkj cNTSAi"
+        >
+          <article
+            className="sc-fzoLsD fPfYqU"
+          >
+            <a
+              href="blog/no-i-siodmy-wpisik"
+            >
+               
+              <img
+                className="sc-fzozJi byXuzH"
+                src="https://www.datocms-assets.com/31772/1595319670-okladkaaa.png"
+              />
+                 
+            </a>
+            <a
+              href="blog/no-i-siodmy-wpisik"
+            >
+               
+              <h3
+                className="sc-fznyAO bZSKYj"
+              >
+                no i siódmy wpisik
+              </h3>
+               
+            </a>
+            <a
+              href="blog/no-i-siodmy-wpisik"
+            >
+                
+              <button
+                className="sc-AxjAm dpLPSn"
+              >
+                <a
+                  href=""
+                >
+                  Więcej
+                </a>
+              </button>
+               
+            </a>
+          </article>
+          <article
+            className="sc-fzoLsD fPfYqU"
+          >
+            <a
+              href="blog/szosty-wpis-przykladowo-testowy"
+            >
+               
+              <img
+                className="sc-fzozJi byXuzH"
+                src="https://www.datocms-assets.com/31772/1595523423-zrzut-ekranu-2020-07-15-o-23-57-53.png"
+              />
+                 
+            </a>
+            <a
+              href="blog/szosty-wpis-przykladowo-testowy"
+            >
+               
+              <h3
+                className="sc-fznyAO bZSKYj"
+              >
+                szósty wpis przykładowo testowy
+              </h3>
+               
+            </a>
+            <a
+              href="blog/szosty-wpis-przykladowo-testowy"
+            >
+                
+              <button
+                className="sc-AxjAm dpLPSn"
+              >
+                <a
+                  href=""
+                >
+                  Więcej
+                </a>
+              </button>
+               
+            </a>
+          </article>
+          <article
+            className="sc-fzoLsD fPfYqU"
+          >
+            <a
+              href="blog/piaty-wpis-przykladowy"
+            >
+               
+              <img
+                className="sc-fzozJi byXuzH"
+                src="https://www.datocms-assets.com/31772/1595676605-obrazek.jpeg"
+              />
+                 
+            </a>
+            <a
+              href="blog/piaty-wpis-przykladowy"
+            >
+               
+              <h3
+                className="sc-fznyAO bZSKYj"
+              >
+                piąty wpis przykładowy
+              </h3>
+               
+            </a>
+            <a
+              href="blog/piaty-wpis-przykladowy"
+            >
+                
+              <button
+                className="sc-AxjAm dpLPSn"
+              >
+                <a
+                  href=""
+                >
+                  Więcej
+                </a>
+              </button>
+               
+            </a>
+          </article>
+        </div>
+        <button
+          className="sc-AxjAm eCNvwl"
+          onClick={[Function]}
+        >
+          <a
+            href=""
+          >
+            Załaduj więcej
+          </a>
+        </button>
+      </div>
+    </section>
+    <footer
+      className="sc-Axmtr kWGnhM"
+    >
+      <h2
+        className="sc-AxmLO fSgRNp"
+      >
+        Kontakt
+      </h2>
+      <div
+        className="sc-fznKkj gYFtRN"
+      >
+        <p
+          className="sc-fzpans fyrPSh"
+        >
+          Napisz do mnie,Lub sprawdź moje profile na innych portalach
+        </p>
+        <div
+          className="sc-AxheI kMspPV"
+        >
+          <a
+            href="https://www.facebook.com/bartosz.sroka4"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sroka-bartosz/"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </a>
+          <a
+            href="https://github.com/bisroka"
+          >
+            <img
+              src="test-file-stub"
+            />
+          </a>
+        </div>
+      </div>
+      <img
+        className="sc-fzozJi jspQwc"
+        src="test-file-stub"
+      />
+    </footer>
+    <footer
+      className="sc-fznZeY dSIpqI"
+    >
+      <p>
+        Strona stworzona przez Bartosza Srokę
+      </p>
+    </footer>
+  </main>,
+]
+`;
