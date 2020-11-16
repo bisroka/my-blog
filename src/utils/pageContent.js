@@ -59,11 +59,11 @@ export const pageContent = {
       subheader: "Napisz do mnie,Lub sprawdź moje profile na innych portalach",
       img: images.hej1,
       contactPictures: [
-        {
-          id: 1,
-          src: images.messenger,
-          link: "https://www.facebook.com/bartosz.sroka4",
-        },
+        // {
+        //   id: 1,
+        //   src: images.messenger,
+        //   link: "https://www.facebook.com/bartosz.sroka4",
+        // },
         {
           id: 2,
           src: images.linkedin,
@@ -77,9 +77,10 @@ export const pageContent = {
     },
     buttons: {
       navButtons: [
-        { id: 1, content: "O mnie", link: "/aboutMe" },
-        { id: 2, content: "Blog", link: "/blog" },
-        { id: 3, content: "Kontakt", link: "/contact" },
+        { id: 1, content: "Start", link: "/" },
+        { id: 2, content: "O mnie", link: "/aboutMe/" },
+        { id: 3, content: "Blog", link: "/blog/" },
+        { id: 4, content: "Kontakt", link: "/contact/" },
       ],
       showPostButton: "Więcej",
       loadMorePostButton: "Załaduj więcej",
