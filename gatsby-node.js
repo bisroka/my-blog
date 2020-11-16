@@ -22,7 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
     const articles = result.data.allDatoCmsArticle.edges
     const articleTemplate = path.resolve("./src/blog/article.js")
 
-    articles.forEach(({ node }, index) => {
+    articles.forEach(({ node }) => {
       const { slug } = node
       const limit = 3
       createPage({
