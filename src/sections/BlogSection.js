@@ -14,7 +14,7 @@ const BlogSection = ({ header, button1, button2, data, limit, click }) => {
       postDescription={article.node.content}
       thumbnail={article.node.thumbnail}
       slug={article.node.slug}
-      link={`blog/${article.node.slug}`}
+      link={`/blog/${article.node.slug}/`}
     />
   ))
   const newsToShow = news.slice(0, limit)

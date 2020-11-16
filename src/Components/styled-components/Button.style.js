@@ -2,7 +2,9 @@ import styled from "styled-components"
 import { device } from "../../utils/device"
 
 export const StyledButton = styled.button`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: ${props => (props.loadMore ? "100%" : "55%")};
   max-width: 250px;
   margin: 3vh 0;
@@ -20,6 +22,8 @@ export const StyledButton = styled.button`
     opacity: 1;
   }
   a {
+    width:100%;
+    text-align: center;
     text-decoration: none;
     color: ${props => (props.loadMore ? props.theme.colors.primary : props.theme.colors.gray)};
   }

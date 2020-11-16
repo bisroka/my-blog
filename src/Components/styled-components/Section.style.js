@@ -3,7 +3,7 @@ import styled, {css} from "styled-components"
 
 export const StyledSection = styled.section`
     display: flex;
-    margin: 5vh 0vh;
+    padding: 5vh 0vh;
     width: 100%;
     flex-direction: column;
     align-items: center;

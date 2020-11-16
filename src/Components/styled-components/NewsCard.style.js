@@ -6,9 +6,10 @@ export const StyledNewsCard = styled.article`
   flex-direction: column;
   justify-content: space-between;
   width: 85%;
-  /* height: 70vh; */
   background-color: ${props => props.theme.colors.white};
   margin: 5vh 1vw;
+  border-radius: 25px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
   @media ${device.laptop} {
     width: 30%;
     height: auto;

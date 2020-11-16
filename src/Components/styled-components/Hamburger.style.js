@@ -4,14 +4,13 @@ import { device } from "../../utils/device"
 export const StyledHamburger = styled.div`
   display: flex;
   justify-content: center;
-  background-color: ${props => props.theme.colors.white};
+  background-color: transparent;
   width: 7vh;
   height: 7vh;
   top: 5vw;
   right: 5vw;
   align-items: center;
   position: absolute;
-  border: 1px solid ${props => props.theme.colors.black};
   border-radius: 25%;
   z-index: 3;
   padding: 1px;
