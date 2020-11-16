@@ -5,6 +5,7 @@ module.exports = {
     title: `Blog-bansera`,
     description: `Opis strony Blog-bansera`,
     author: `@BartoszSroka`,
+    siteUrl: `http://localhost:8000/`
   },
   plugins: [
     `gatsby-plugin-testing`,
@@ -12,6 +13,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-page-transitions`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/layouts/index.js`),
+      },
+    },
     {
       resolve: `gatsby-source-datocms`,
       options: {
