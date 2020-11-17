@@ -2,9 +2,9 @@ import styled from "styled-components"
 import { device } from "../../utils/device"
 
 export const StyledButton = styled.button`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  /* flex-direction: column;
+  align-items: center; */
   width: ${props => (props.loadMore ? "100%" : "55%")};
   max-width: 250px;
   margin: 3vh 0;

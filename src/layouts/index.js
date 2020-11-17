@@ -16,7 +16,9 @@ const Layout = ({ children, location }) => (
       }`}
     render={data => (
       <>
-        <Transition location = {location}>
+        <Transition location = {location}
+        data={data}
+        >
           {children}
         </Transition>
 

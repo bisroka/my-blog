@@ -8,12 +8,10 @@ import { StyledNewsCard, StyledSubheader, StyledImage } from "./styled-component
 const News = ({ postTitle, button, thumbnail, link }) => {
   return (
     <StyledNewsCard>
-  
-  <Link to={link}> <StyledImage newsCard src={thumbnail ? thumbnail.url : null}></StyledImage>   </Link>
+              <Link to={link}> <StyledImage newsCard src={thumbnail ? thumbnail.url : null}></StyledImage>   </Link>
               <Link to={link}> <StyledSubheader lightColor >{postTitle}</StyledSubheader> </Link>
               {/* <StyledParagraph paragraph={postDescription} section="news" /> */}
-              <Link to={link}>  <Button button={button} white /> </Link>
-     
+              <Button link={link} button={button} white />
       </StyledNewsCard>
   )
 }

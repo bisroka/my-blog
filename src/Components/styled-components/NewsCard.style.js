@@ -5,6 +5,7 @@ export const StyledNewsCard = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 85%;
   background-color: ${props => props.theme.colors.white};
   margin: 5vh 1vw;

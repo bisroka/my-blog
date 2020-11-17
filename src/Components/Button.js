@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const Button = ({ button, loadMore, menu, click, link, white }) => {
   return (
     <StyledButton menu={menu} loadMore={loadMore} white={white} onClick={click}>
-      <Link to={link ? link : ""}>
+      <Link to={link ? link : "/"}>
         {button}
      </Link>
       </StyledButton>
