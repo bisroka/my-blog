@@ -3,6 +3,7 @@ import News from "../Components/News"
 import styled from 'styled-components'
 import FooterSection from "../sections/footerSection"
 import {pageContent} from "../utils/pageContent"
+
 import { StyledHeader, StyledSection, StyledWrapper, } from "../Components/styled-components/index.styledComponents"
 
 const StyledArticlesPage = styled.main`

@@ -6,6 +6,7 @@ import {pageContent} from "../utils/pageContent"
 import { GlobalStyle, theme } from "../utils/theme"
 import Navigation from "../sections/navigation"
 import FooterSection from "../sections/footerSection"
+
 import { StyledParagraph, StyledHeader, StyledSection } from "../Components/styled-components/index.styledComponents"
 
 
