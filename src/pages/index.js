@@ -43,9 +43,9 @@ const IndexPage = ({data}) => {
   const [newsLimit, setNewsLimit] = useState(3)
 
   useEffect(()=>{
-    const header = document.querySelector('.ldOIKQ')
-    const subHeader = document.querySelector('.DvgXU')
-    const image = document.querySelector('.cTCFdS')
+    const header = document.querySelector('.helloHeader')
+    const subHeader = document.querySelector('.helloSubheader')
+    const image = document.querySelector('.helloImage')
 
 
     gsap.set([header, subHeader, image], {autoAlpha:0})
@@ -61,7 +61,6 @@ const IndexPage = ({data}) => {
     gsap.registerPlugin(ScrollTrigger);
     const sections =  [...document.querySelectorAll('section:not(:first-child) *, footer')]
     const buttons = [...document.querySelectorAll('nav button')]
-    console.log(buttons)
     sections.forEach(section=>{
       const sectionsTimeline = gsap.timeline({
         scrollTrigger: {

@@ -8,10 +8,10 @@ const HelloSection = ({ header,subheader, img }) => {
     <StyledSection helloSection background={backgroundHello}>
       <StyledWrapper>
         <StyledWrapper helloSection column>
-          <StyledHeader helloSection>{header}</StyledHeader>
-          <StyledSubheader helloSection>{subheader}</StyledSubheader>
+          <StyledHeader className="helloHeader" helloSection>{header}</StyledHeader>
+          <StyledSubheader className="helloSubheader" helloSection>{subheader}</StyledSubheader>
         </StyledWrapper>
-        <StyledImage src={img} hello/>
+        <StyledImage className="helloImage" src={img} hello/>
       </StyledWrapper>
     </StyledSection>
   )
