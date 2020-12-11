@@ -24,14 +24,14 @@ const Articles = ({ data, button1 }) => {
   return (
     <>
       <StyledSection articles>
-    <StyledArticlesPage>
-        <StyledWrapper column>
-          <StyledHeader>Co u mnie słychać</StyledHeader>
-          <StyledWrapper>
-            {news}
-          </StyledWrapper>
-          </StyledWrapper>
-    </StyledArticlesPage>
+        <StyledArticlesPage>
+          <StyledWrapper column>
+            <StyledHeader>Co u mnie słychać</StyledHeader>
+            <StyledWrapper>
+              {news}
+            </StyledWrapper>
+            </StyledWrapper>
+        </StyledArticlesPage>
           <FooterSection footerContent={pageContent.footer.footerContent} />
       </StyledSection>
     </>
