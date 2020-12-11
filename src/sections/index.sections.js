@@ -1,4 +1,4 @@
-import Navigation from "../sections/Navigation"
+import Navigation from "../sections/navigation"
 import HelloSection from "../sections/HelloSection"
 import AboutMeSection from "../sections/AboutMeSection"
 import FreeTimeSection from "../sections/FreeTimeSection"

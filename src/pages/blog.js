@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { GlobalStyle, theme } from "../utils/theme"
 import { ThemeProvider } from "styled-components"
-import Navigation from "../sections/Navigation"
+import Navigation from "../sections/navigation"
 import Articles from "../blog/articles"
 import { pageContent } from "../utils/pageContent"
 
