@@ -24,6 +24,7 @@
     "gatsby-source-datocms": "^2.3.0",
     "gatsby-source-filesystem": "^2.3.18",
     "gatsby-transformer-sharp": "^2.5.10",
+    "gsap": "^3.5.1",
     "jest": "^26.6.3",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
