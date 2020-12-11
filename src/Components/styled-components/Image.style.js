@@ -16,7 +16,8 @@ export const StyledImage = styled.img`
     contact &&
     css`
         position: absolute;
-        bottom: -5vh;
+        bottom: -6.1vh;
+        left:-1vw;
         height: 35vh;
         @media ${device.tablet} {
         height: 40vh;
@@ -24,15 +25,19 @@ export const StyledImage = styled.img`
     `}
     ${({hello}) => 
     hello && css `
-          width: 80vw;
-            height: 80vw;
+        width: 80vw;
+        height: 80vw;
+        z-index: 0;
         @media ${device.tablet} {
             width: 50vh;
             height: 50vh;
         }
         @media ${device.laptop} {
-            width: 40%;
-            height: 40%;
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right:-10%;
         }
     `}
     ${({newsCard})=>

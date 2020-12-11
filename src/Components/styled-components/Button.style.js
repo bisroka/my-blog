@@ -13,10 +13,10 @@ export const StyledButton = styled.button`
   font-family: ${props => props.theme.fontFamily.buttons};;
   background-color: ${props => (props.white ? props.theme.colors.white : props.theme.colors.primary)};
   border:0;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+  box-shadow: ${props=>props.white ? props.theme.shadows.whiteShadow : props.theme.shadows.buttonShadow};
   border-radius: 25px;
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
   transition: 0.2s;
   :hover {
     opacity: 1;

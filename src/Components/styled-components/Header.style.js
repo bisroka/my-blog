@@ -10,7 +10,11 @@ export const StyledHeader = styled.h2`
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
+  z-index:1;
   @media ${device.tablet} {
     font-size: ${props => props.helloSection ? props.theme.fontSize.xxl : props.theme.fontSize.xl};
+  }
+  @media ${device.laptop} {
+    font-size: ${props => props.helloSection ? props.theme.fontSize.xxxl : props.theme.fontSize.xl};
   }
 `

@@ -56,7 +56,7 @@ export const pageContent = {
     },
     contact: {
       header: "Kontakt",
-      subheader: "Napisz do mnie,Lub sprawdź moje profile na innych portalach",
+      subheader: "Napisz do mnie lub sprawdź moje profile na innych portalach",
       img: images.hej1,
       contactPictures: [
         // {

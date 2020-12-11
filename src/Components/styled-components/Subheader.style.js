@@ -7,8 +7,13 @@ export const StyledSubheader = styled.h3`
   font-family: ${props => props.theme.fontFamily.main};
   margin: 3vh 0;
   text-align: center;
+  z-index:1;
   @media ${device.tablet} {
     font-size: ${props => props.theme.fontSize.l};
-    max-width: 45vw;
+    max-width: ${props => props.helloSection ? "30vw" : "45vw"};
+  }
+  @media ${device.laptop} {
+    font-size: ${props => props.helloSection ? props.theme.fontSize.xl : props.theme.fontSize.l};
+   
   }
 `

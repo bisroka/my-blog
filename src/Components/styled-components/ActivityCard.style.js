@@ -33,7 +33,7 @@ export const StyledActivityCard = styled.article`
     font-style: normal;
     background-color: ${props => props.theme.colors.primary};
     border-radius: 25px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
+    box-shadow: ${props=>props.theme.shadows.cardShadow};
     @media ${device.tablet} {
         padding: 1.5vh 1.5vh;
         max-width: 50vh;

@@ -16,11 +16,12 @@ const StyledWrapper = styled.section`
 `
 
 const HeaderImg = styled.div`
-  margin: 5vh auto 0;
-  width: 80%;
+  padding: 5vh 0;
+  width: 100%;
   height: 30vh;
   background-attachment: fixed;
   background-size: cover;
+  align-self: flex-end;
   @media ${device.laptop} {
     height: 45vh;
   }

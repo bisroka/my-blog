@@ -3,8 +3,9 @@ import { graphql } from "gatsby"
 import { pageContent } from "../utils/pageContent"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle, theme } from "../utils/theme"
-import { Navigation, HelloSection, AboutMeSection, FreeTimeSection, BlogSection, ContactSection, FooterSection } from "../sections/index.sections"
 import { StyledPageWrapper } from "../utils/pageWrapper"
+import HelmetComponent from "../utils/helmet"
+import { Navigation, HelloSection, AboutMeSection, FreeTimeSection, BlogSection, ContactSection, FooterSection } from "../sections/index.sections"
 export const query = graphql`
   query queryIndex {
     allDatoCmsArticle(limit: 9) {
@@ -19,7 +20,21 @@ export const query = graphql`
         }
       }
     }
-  }
+    allDatoCmsSeo {
+        edges {
+          node {
+            title
+            description
+            image
+            canonical
+            ogTitle
+            ogDescription
+            ogUrl
+            ogImage
+          }
+        }
+      }
+    }
 `
 
 class IndexPage extends Component {
@@ -37,6 +52,7 @@ class IndexPage extends Component {
     return (
       <>
         <GlobalStyle />
+        {/* <HelmetComponent data={ this.props.data.allDatoCmsSeo }/> */}
         <ThemeProvider theme={theme}>
           <Navigation buttons={pageContent.buttons.navButtons} />
           <StyledPageWrapper>
