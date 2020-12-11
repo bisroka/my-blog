@@ -4,7 +4,6 @@ import { pageContent } from "../utils/pageContent"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle, theme } from "../utils/theme"
 import { StyledPageWrapper } from "../utils/pageWrapper"
-import HelmetComponent from "../utils/helmet"
 import { Navigation, HelloSection, AboutMeSection, FreeTimeSection, BlogSection, ContactSection, FooterSection } from "../sections/index.sections"
 export const query = graphql`
   query queryIndex {
