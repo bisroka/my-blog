@@ -12,7 +12,7 @@ export const StyledHamburger = styled.div`
   align-items: center;
   position: absolute;
   border-radius: 25%;
-  z-index: 3;
+  z-index: 5;
   padding: 1px;
   cursor: pointer;
 

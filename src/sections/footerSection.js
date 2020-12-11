@@ -7,6 +7,8 @@ const FooterStyled = styled.footer`
   height: 5vh;
   width: 100vw;
   overflow: hidden;
+  z-index: 0;
+  align-self: flex-end;
   background-color: ${props => props.theme.colors.primary};
   p {
     font-size: ${props => props.theme.fontSize.s};

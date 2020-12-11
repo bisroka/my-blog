@@ -33,6 +33,7 @@ export const GlobalStyle = createGlobalStyle`
       body{
         overflow-x: hidden;
         width:100vw;
+        min-height: 95vh;
         margin: 0 auto;
 }
 

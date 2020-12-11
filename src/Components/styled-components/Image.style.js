@@ -19,6 +19,7 @@ export const StyledImage = styled.img`
         bottom: -6.1vh;
         left:-1vw;
         height: 35vh;
+        z-index:2;
         @media ${device.tablet} {
         height: 40vh;
     }
