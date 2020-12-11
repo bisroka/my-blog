@@ -65,7 +65,7 @@ const IndexPage = ({data}) => {
       const sectionsTimeline = gsap.timeline({
         scrollTrigger: {
           trigger: section,
-          start: "center bottom",
+          start: "top bottom",
           ease: 'power3.inOut'
         },
       });
