@@ -10,7 +10,7 @@ export const StyledNewsCard = styled.article`
   background-color: ${props => props.theme.colors.white};
   margin: 5vh 1vw;
   border-radius: 25px;
-  box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
+  box-shadow: ${props=>props.theme.shadows.postShadow};
   @media ${device.laptop} {
     width: 30%;
     height: auto;

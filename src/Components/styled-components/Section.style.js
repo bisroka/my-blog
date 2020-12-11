@@ -1,6 +1,7 @@
 import styled, {css} from "styled-components"
 
 
+
 export const StyledSection = styled.section`
     display: flex;
     padding: 5vh 0vh;
@@ -8,8 +9,12 @@ export const StyledSection = styled.section`
     flex-direction: column;
     align-items: center;
     background: ${props => props.white ? props.theme.colors.white : props.theme.colors.primary};
+  
       ${({helloSection})=>
         helloSection && css `
+         position: relative;
+        background-image: url(${props => props.background});
+        background-size: cover;
         flex-direction: row;
       align-items: center;
       justify-content: center;
@@ -18,5 +23,6 @@ export const StyledSection = styled.section`
       ${({articleSection}) => 
       articleSection && css `
       min-height: 20vh;
+      align-items: stretch;
       `}
 `

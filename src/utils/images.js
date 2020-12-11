@@ -1,4 +1,4 @@
-import hi2 from "../assets/svg/hi2.svg"
+import hi2 from "../assets/hi2.svg"
 import bans from "../assets/svg/bans.svg"
 import calm from "../assets/svg/calm.svg"
 import guitarist from "../assets/svg/guitarist.svg"

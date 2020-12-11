@@ -1,21 +1,13 @@
 import React from "react"
 import News from "../Components/News"
-import { pageContent } from "../utils/pageContent"
-import { FooterSection } from "../sections/index.sections.js"
+import styled from 'styled-components'
+import FooterSection from "../sections/footerSection"
+import {pageContent} from "../utils/pageContent"
 import { StyledHeader, StyledSection, StyledWrapper, } from "../Components/styled-components/index.styledComponents"
 
-// const StyledWrapper = styled.section`
-//   max-width: 1200px;
-//   margin: 5vh auto 0;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   @media ${device.laptop} {
-//     flex-direction: row;
-//     align-items: baseline;
-//   }
-// `
+const StyledArticlesPage = styled.main`
+  min-height:100vh;
+`
 
 const Articles = ({ data, button1 }) => {
   const articles = data.allDatoCmsArticle.edges
@@ -25,19 +17,21 @@ const Articles = ({ data, button1 }) => {
       button={button1}
       postTitle={article.node.title}
       postDescription={article.node.content}
-      postImg={article.node.thumbnail}
+      thumbnail={article.node.thumbnail}
       link={article.node.slug}
     />
   ))
   return (
     <>
-      <StyledSection>
+      <StyledSection articles>
+    <StyledArticlesPage>
         <StyledWrapper column>
           <StyledHeader>Co u mnie słychać</StyledHeader>
           <StyledWrapper>
             {news}
           </StyledWrapper>
           </StyledWrapper>
+    </StyledArticlesPage>
           <FooterSection footerContent={pageContent.footer.footerContent} />
       </StyledSection>
     </>
@@ -45,3 +39,16 @@ const Articles = ({ data, button1 }) => {
 }
 
 export default Articles
+
+// export const query = graphql`
+//   query fetchArticle($slug: String) {
+//     article: datoCmsArticle(slug: { eq: $slug }) {
+//       title
+//       slug
+//       content
+//       thumbnail {
+//         url
+//       }
+//     }
+//   }
+// `

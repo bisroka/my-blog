@@ -14,14 +14,19 @@ export const theme = {
         l: "3vh",
         xl: "5vh",
         xxl: "10vh",
-
+        xxxl: "13vh",
     },
     fontFamily: {
         main: "Charter",
         buttons: "Impact",
         paragraph: "Helvatica, Arial, sans-serif",
     },
-
+    shadows:{
+        postShadow: '',
+        whiteShadow: '15px 15px 30px #d9d9d9, -15px -15px 30px #ffffff;',
+        cardShadow: '15px 15px 30px #d9d9d9, -15px -15px 30px #ffffff;',
+        buttonShadow: '9px 9px 18px #b8c5d4, -9px -9px 18px #f8ffff;',
+    }
 }
 
 export const GlobalStyle = createGlobalStyle`
