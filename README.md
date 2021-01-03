@@ -19,4 +19,4 @@ I also used <a href="https://styled-components.com/">styled-components</a> libra
 
 ### CHECK THIS!
 
-https://gracious-hawking-99cc4e.netlify.app/
+https://fajnyblog.netlify.app/
