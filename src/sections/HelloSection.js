@@ -1,17 +1,16 @@
-import React from "react"
+import React, { useContext } from "react"
 
 import { StyledSection, StyledHeader,StyledSubheader, StyledWrapper, StyledImage} from "../Components/styled-components/index.styledComponents"
-import backgroundHello from "../assets/background.jpg"
+import { StoreContext } from "../store/StoreProvider"
 
-const HelloSection = ({ header,subheader, img }) => {
+const HelloSection = ({ header, subheader, img }) => {
+  const { isMenuOpen } = useContext(StoreContext)
   return (
-    <StyledSection helloSection background={backgroundHello}>
-      <StyledWrapper>
-        <StyledWrapper helloSection column>
-          <StyledHeader className="helloHeader" helloSection>{header}</StyledHeader>
-          <StyledSubheader className="helloSubheader" helloSection>{subheader}</StyledSubheader>
-        </StyledWrapper>
-        <StyledImage className="helloImage" src={img} hello/>
+    <StyledSection helloSection>
+      <StyledWrapper helloSection>
+        <StyledHeader className="helloHeader outer" helloSection isMenuOpen={isMenuOpen}> {header} </StyledHeader>
+        <StyledSubheader className="helloSubheader outer" helloSection isMenuOpen={isMenuOpen}>{subheader}</StyledSubheader>
+        <StyledImage className="helloImage" src={img} helloSection />
       </StyledWrapper>
     </StyledSection>
   )

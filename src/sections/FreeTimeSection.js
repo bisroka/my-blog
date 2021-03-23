@@ -13,9 +13,9 @@ const FreeTimeSection = ({ header, activities }) => {
   ))
   return (
     <StyledSection white>
-      <StyledWrapper column>
+      <StyledWrapper freeTimeSection column>
         <StyledHeader>{header}</StyledHeader>
-        <StyledWrapper> {myActivities}</StyledWrapper>
+        <StyledWrapper freeTimeSection> {myActivities} </StyledWrapper>
       </StyledWrapper>
     </StyledSection>
   )

@@ -2,28 +2,27 @@ import React from "react"
 import { StyledParagraph, StyledHeader, StyledSubheader, StyledSection, StyledArticle, StyledWrapper, StyledImage } from "../Components/styled-components/index.styledComponents"
 
 
-const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
+const AboutMeSection = ({ header, subheader, paragraphes, img, animation }) => {
   const paragr = paragraphes.map(paragraph => (
-    <StyledParagraph
+    <StyledSubheader
       key={paragraph.id}
       section="aboutMe"
       className="aboutMe__container--paragraph"
-    >{paragraph.content}</StyledParagraph>
+      aboutMeSection
+    >{paragraph.content}</StyledSubheader>
   ))
-
   return (
     <StyledSection white>
-        <StyledHeader>{header}</StyledHeader>
-      <StyledWrapper column>
-        <StyledArticle>
-          <StyledImage src={img}/>
-          <StyledWrapper column>
-          <StyledSubheader>{subheader}</StyledSubheader>
-          {paragr}
-        </StyledWrapper>
+      {/* <StyledWrapper column> */}
+        <StyledHeader className={animation}>{header}</StyledHeader>
+        <StyledArticle aboutMeSection>
+          <StyledImage src={img} className={animation}/>
+          <StyledSubheader aboutMeSection className={animation}>{subheader}</StyledSubheader>
+          <div style={{gridArea: "paragraphes"}}>
+            {paragr}
+          </div>
         </StyledArticle>
-       
-      </StyledWrapper>
+      {/* </StyledWrapper> */}
     </StyledSection>
   )
 }
