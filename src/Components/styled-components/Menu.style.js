@@ -1,21 +1,32 @@
 import styled from "styled-components"
 import { device } from "../../utils/device"
+import { theme } from "../../utils/theme"
 
 export const StyledMenu = styled.nav`
-  display: ${props => (props.isVisible ? "flex" : "none")};;
-  flex-direction: column;
+  /* display: ${props => (props.isVisible ? "flex" : "none")}; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  /* align-content: flex-start; */
   position: absolute;
-  background-color: ${props => props.theme.colors.primary};;
+  /* background-color: ${props=>props.homePage ? "transparent" : theme.colors.primary}; */
+  background-color: transparent;
   width: 100vw;
-  height: 100vh;
+  /* height: ${props=>props.homePage ? "50vh" : "100vh"}; */
+  height: 50vh;
+  margin: 5vh 0;
   z-index: 3;
   top: 0;
-  transition: 0.2s;
-  right: ${props => (props.isVisible ? "0" : "-100vw")};
-  opacity: ${props => (props.isVisible ? "1" : "0")};
+  right: -100vw;
+  /* transform: ${props => (props.isVisible ? "translateX(0)" : "translateX(100vw)")}; */
+  opacity: 1;
+  /* box-shadow: ${theme.shadows.postShadow}; */
+  /* transition: 0.7s; */
+
   @media ${device.laptop} {
+    margin: 0;
     display: flex;
     right: 0;
     opacity: 1;

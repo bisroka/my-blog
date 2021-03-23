@@ -2,17 +2,34 @@ import styled, {css} from "styled-components"
 import { device } from "../../utils/device"
 
 export const StyledImage = styled.img`
-        margin: 1vh;
-        display: block;
-        width: 30vw;
-        border-radius: ${({circle})=>circle? "50%":"none"};
-    @media ${device.tablet} {
-        width: 20vw;
-    }
-    @media ${device.laptop} {
-        width: 15vw;
-    }
-    ${({ contact }) =>
+    /* border-radius: ${({circle})=>circle? "50%":"none"}; */
+    display: block;
+    width: 100%;
+    grid-area: image;
+        /* @media ${device.tablet} {
+            width: 20vw;
+        }
+        @media ${device.laptop} {
+            width: 15vw;
+        } */
+    ${({helloSection}) => 
+    helloSection && css`
+        /* height: 80vw; */
+        width: 100%;
+        z-index: 0;
+        max-width: 500px;
+        align-self: end;
+        justify-self: end;
+        @media ${device.tablet} {
+            max-width: 50vh;
+            /* height: 50vh; */
+        }
+        @media ${device.laptop} {
+            max-width: 600px;
+            /* height: 50vh; */
+        }
+    `}
+    /* ${({ contact }) =>
     contact &&
     css`
         position: absolute;
@@ -23,37 +40,24 @@ export const StyledImage = styled.img`
         @media ${device.tablet} {
         height: 40vh;
     }
-    `}
-    ${({hello}) => 
-    hello && css `
-        width: 80vw;
-        height: 80vw;
-        z-index: 0;
-        @media ${device.tablet} {
-            width: 50vh;
-            height: 50vh;
-        }
-        @media ${device.laptop} {
-            width: 80%;
-            height: 80%;
-            position: absolute;
-            bottom: 0;
-            right:-10%;
-        }
-    `}
-    ${({newsCard})=>
-        newsCard && css `
+    `} */
+
+    ${({blogSection})=>
+        blogSection && css `
         display: block;
         background: grey;
         height: 200px;
         width: 100%;
         object-fit: cover;
-        opacity: 0.7;
+        opacity: 0.5;
         transition: 0.3s;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
         @media ${device.laptop} {
            max-width: 100%;
         }
-        :hover {
+        /* :hover {
             opacity: 1;
-        }`}
+        } */
+    `}
 `
