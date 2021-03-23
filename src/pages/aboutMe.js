@@ -15,6 +15,7 @@ class AboutMePage extends Component {
             <Navigation buttons={pageContent.buttons.navButtons} />
             <StyledPageWrapper>
             <AboutMeSection
+              animation="outer"
               header={pageContent.aboutMe.header}
               subheader={pageContent.aboutMe.subheader}
               paragraphes={pageContent.aboutMe.paragraphes}
