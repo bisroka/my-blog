@@ -2,9 +2,9 @@ import React from "react"
 import { StyledHamburger } from "./styled-components/Hamburger.style"
 import PropTypes from "prop-types"
 
-const Hamburger = ({ click }) => {
+const Hamburger = ({isVisible, click }) => {
   return (
-    <StyledHamburger onClick={click}>
+    <StyledHamburger className="hamburger" isVisible={isVisible} onClick={click}>
       <div />
     </StyledHamburger>
   )
