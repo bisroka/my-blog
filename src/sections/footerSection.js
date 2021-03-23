@@ -1,30 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import { device } from "../utils/device"
+import {StyledFooter} from "../Components/styled-components/index.styledComponents"
 
 
 const FooterStyled = styled.footer`
-  height: 5vh;
-  width: 100vw;
-  overflow: hidden;
-  z-index: 0;
-  align-self: flex-end;
-  background-color: ${props => props.theme.colors.primary};
-  p {
-    font-size: ${props => props.theme.fontSize.s};
-    text-align: center;
-    color: ${props => props.theme.colors.gray};;
-    @media ${device.tablet} {
-      font-size: ${props => props.theme.fontSize.m};
-    }
-  }
+
 `
 
 const FooterSection = ({ footerContent }) => {
   return (
-    <FooterStyled>
+    <StyledFooter>
       <p>{footerContent}</p>
-    </FooterStyled>
+    </StyledFooter>
   )
 }
 
