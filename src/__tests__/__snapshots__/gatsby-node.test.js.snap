@@ -8,7 +8,6 @@ exports[`testing gatsby-node given data when querying for chapters then runs a g
           node {
             title
             slug
-            content
             thumbnail {
               url
             }
@@ -27,7 +26,6 @@ exports[`testing gatsby-node given data when querying for edges then runs a grap
           node {
             title
             slug
-            content
             thumbnail {
               url
             }
