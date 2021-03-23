@@ -1,6 +1,9 @@
+import React from "react"
+import StoreProvider  from "./src/store/StoreProvider"
+
 const transitionDelay = 500
 
-exports.shouldUpdateScroll = ({
+export const shouldUpdateScroll = ({
     routerProps: { location },
     getSavedScrollPosition,
 }) => {
@@ -14,4 +17,8 @@ exports.shouldUpdateScroll = ({
         )
     }
     return false
-    }
+}
+
+export const wrapRootElement = ({ element }) => (
+  <StoreProvider>{element}</StoreProvider>
+)
