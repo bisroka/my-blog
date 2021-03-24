@@ -1,29 +1,26 @@
 import React from "react"
-import { StyledParagraph, StyledHeader, StyledSubheader, StyledSection, StyledArticle, StyledWrapper, StyledImage } from "../Components/styled-components/index.styledComponents"
+import { StyledHeader, StyledSubheader, StyledSection, StyledArticle, StyledImage } from "../Components/styled-components/index.styledComponents"
 
-
-const AboutMeSection = ({ header, subheader, paragraphes, img }) => {
+const AboutMeSection = ({ pageContent, animation }) => {
+  const { header, subheader, paragraphes, img } = pageContent
   const paragr = paragraphes.map(paragraph => (
-    <StyledParagraph
+    <StyledSubheader
       key={paragraph.id}
       section="aboutMe"
       className="aboutMe__container--paragraph"
-    >{paragraph.content}</StyledParagraph>
+      aboutMeSection
+    >{paragraph.content}</StyledSubheader>
   ))
-
   return (
     <StyledSection white>
-        <StyledHeader>{header}</StyledHeader>
-      <StyledWrapper column>
-        <StyledArticle>
-          <StyledImage src={img}/>
-          <StyledWrapper column>
-          <StyledSubheader>{subheader}</StyledSubheader>
-          {paragr}
-        </StyledWrapper>
+        <StyledHeader className={animation}>{header}</StyledHeader>
+        <StyledArticle aboutMeSection>
+          <StyledImage src={img} className={animation}/>
+          <StyledSubheader aboutMeSection className={animation}>{subheader}</StyledSubheader>
+          <div style={{gridArea: "paragraphes", zIndex: "1"}}>
+            {paragr}
+          </div>
         </StyledArticle>
-       
-      </StyledWrapper>
     </StyledSection>
   )
 }

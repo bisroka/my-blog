@@ -10,7 +10,6 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             title
             slug
-            content
             thumbnail {
               url
             }
@@ -24,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     articles.forEach(({ node }) => {
       const { slug } = node
-      const limit = 3
+      const limit = 6
       createPage({
         path: `blog/${slug}`,
         component: articleTemplate,

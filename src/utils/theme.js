@@ -5,27 +5,30 @@ export const theme = {
         primary: "#D8E8F9",
         white: "#FFFFFF",
         lightcolor: "#AAAAAA", 
-        gray: "#6b6b6b",
+        gray: "#555353",
         black: "#000000",
     },
     fontSize: {
-        s: "1vh",
-        m: "1.5vh",
-        l: "3vh",
-        xl: "5vh",
-        xxl: "10vh",
-        xxxl: "13vh",
+        s: "15px",
+        m: "18px",
+        l: "25px",
+        xl: "42px",
+        xxl: "60px",
+        xxxl: "80px",
     },
     fontFamily: {
-        main: "Charter",
+        header: "Charter",
+        subheader: "Skia",
         buttons: "Impact",
-        paragraph: "Helvatica, Arial, sans-serif",
+        paragraph: "Skia, Helvatica, Arial, sans-serif",
     },
     shadows:{
-        postShadow: '',
+        postShadow: '0px 0px 10px #d9d9d9',
         whiteShadow: '15px 15px 30px #d9d9d9, -15px -15px 30px #ffffff;',
         cardShadow: '15px 15px 30px #d9d9d9, -15px -15px 30px #ffffff;',
-        buttonShadow: '9px 9px 18px #b8c5d4, -9px -9px 18px #f8ffff;',
+        cardHoverShadow: '15px 15px 30px #333333, -15px -15px 30px #ffffff;',
+        buttonShadow: '0px 0px 10px #d9d9d9',
+        buttonHoverShadow: '0px 0px 20px #c2c2c2'
     }
 }
 

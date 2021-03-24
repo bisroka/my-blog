@@ -2,13 +2,13 @@ import styled from "styled-components"
 import { device } from "../../utils/device"
 
 export const StyledActivityCard = styled.article`
-    width: 85%;
+    width: 100%;
     margin: 5vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     @media ${device.laptop} {
-    max-width: 25%;
+    max-width: 30%;
     margin: 5vh 1vw;
   } 
 
@@ -27,13 +27,15 @@ export const StyledActivityCard = styled.article`
     justify-content: center;
     padding: 5vh 3vh;
     width: 100%;
+    max-width: 300px;
     text-align: center;
     font-size: ${props => props.theme.fontSize.l};
     color: ${props => props.theme.colors.gray};
     font-style: normal;
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${props=>props.theme.colors.primary};
     border-radius: 25px;
-    box-shadow: ${props=>props.theme.shadows.cardShadow};
+    box-shadow: 0px 0px 25px rgba(162, 172, 216, 0.5);
+
     @media ${device.tablet} {
         padding: 1.5vh 1.5vh;
         max-width: 50vh;

@@ -1,49 +1,29 @@
-import React, { Component } from "react"
-import styled from "styled-components"
-import { device } from "../utils/device"
+import React, { useContext } from "react"
 import Menu from "../Components/Menu"
 import Hamburger from "../Components/Hamburger"
+import { StyledNavBar } from '../Components/styled-components/index.styledComponents';
+import { StoreContext } from "../store/StoreProvider"
+import { mobileMenuAnimation } from "../animations/menuAnimation/mobileMenuAnimation"
 
+const Navigation = ({ navButtons, homePage }) => {
+const { isMenuOpen, setIsMenuOpen } = useContext(StoreContext)
 
-
-const NavBar = styled.header`
-  display: block;
-  background-color: ${props => props.theme.colors.primary};
-  position: relative;
-  width: 100%;
-  height: 12vh;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  @media ${device.laptop} {
-    max-width: 100vw;
-    height: 5vh;
-    width: 100vw;
-  }
-`
-
-class Navigation extends Component {
-  state = { isMenuOpen: false }
-  hamburgerButtonHandler = () => {
-    const isMenuOpen = !this.state.isMenuOpen
-    this.setState({
-      isMenuOpen,
-    })
+ const hamburgerButtonHandler = () => {
+  setIsMenuOpen(!isMenuOpen)
+  mobileMenuAnimation(!isMenuOpen, homePage)
   }
 
-  render() {
-    return (
+  return ( 
       <>
-        <NavBar>
-          <Hamburger click={this.hamburgerButtonHandler} />
+        <StyledNavBar>
+          <Hamburger isVisible={isMenuOpen} click={hamburgerButtonHandler} />
           <Menu
-            buttons={this.props.buttons}
-            isVisible={this.state.isMenuOpen}
+            homePage={homePage}
+            navButtons={navButtons}
+            isVisible={isMenuOpen}
           />
-        </NavBar>
+        </StyledNavBar>
       </>
-    )
-  }
+   );
 }
-
-export default Navigation
+export default Navigation;

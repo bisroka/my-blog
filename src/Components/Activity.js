@@ -7,7 +7,7 @@ const Activity = ({ img, title, paragraph }) => {
     <StyledActivityCard>
       <img src={img}></img>
       <div className="description">
-        <StyledSubheader>{title}</StyledSubheader>
+        <StyledSubheader freeTimeSection>{title}</StyledSubheader>
         <StyledParagraph>{paragraph}</StyledParagraph>
       </div>
     </StyledActivityCard>
