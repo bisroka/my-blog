@@ -4,20 +4,22 @@ import { GlobalStyle, theme } from "../utils/theme"
 import { StyledPageWrapper } from "../utils/pageWrapper"
 import { Navigation, ContactSection, FooterSection } from "../sections/index.sections"
 import { pageContent } from "../utils/pageContent"
-
+import StoreProvider from "../store/StoreProvider"
 const ContactPage = () => {
     return (     
         <>
         <GlobalStyle />
-        <ThemeProvider theme={theme}>
-            <Navigation navButtons={pageContent.buttons.navButtons} />
-            <StyledPageWrapper>
-            <ContactSection
-                pageContent={pageContent.contact}
+          <StoreProvider>
+          <ThemeProvider theme={theme}>
+              <Navigation navButtons={pageContent.buttons.navButtons} />
+              <StyledPageWrapper>
+                <ContactSection
+                  pageContent={pageContent.contact}
                 />
-                  <FooterSection footerContent={pageContent.footer.footerContent} /> 
-                </StyledPageWrapper> 
-        </ThemeProvider>
+                <FooterSection footerContent={pageContent.footer.footerContent} /> 
+              </StyledPageWrapper> 
+          </ThemeProvider>
+          </StoreProvider>
         </>
    );
 }

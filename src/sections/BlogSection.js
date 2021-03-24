@@ -5,7 +5,7 @@ import { StyledSection, StyledHeader, StyledWrapper } from "../Components/styled
 import { StoreContext } from "../store/StoreProvider"
 import { VanillaTilt } from "../animations/tilt-3d/tilt"
 
-const BlogSection = ({ pageContent, showPostButton, loadMorePostButton, data  }) => {
+const BlogSection = ({ pageContent, buttons, data  }) => {
   const articles = data.allDatoCmsArticle.edges
   const { header  } = pageContent
 
@@ -33,7 +33,7 @@ const BlogSection = ({ pageContent, showPostButton, loadMorePostButton, data  })
     <News
       className="news-card"
       key={article.node.title}
-      showPostButton={showPostButton}
+      showPostButton={buttons.showPostButton}
       postTitle={article.node.title}
       postDescription={article.node.description}
       thumbnail={article.node.thumbnail}
@@ -47,7 +47,7 @@ const BlogSection = ({ pageContent, showPostButton, loadMorePostButton, data  })
       <StyledWrapper blogSection className="blog-section" column>
         <StyledHeader>{header}</StyledHeader>
         <StyledWrapper blogSection> {news} </StyledWrapper>
-        <Button className="button-hover" buttonText={loadMorePostButton} click={setNewsLimitHandler} />
+        <Button className="button-hover" buttonText={data.allDatoCmsArticle.edges.length > newsLimit ? buttons.loadMorePostButton:"Sprawdź wszystkie posty"} click={setNewsLimitHandler} />
       </StyledWrapper>
     </StyledSection>
   )

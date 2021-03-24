@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bartosz-sroka-blog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Personal blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bartosz Sroka",
   "dependencies": {
     "acorn": "^8.1.0",
     "babel-eslint": "^10.1.0",

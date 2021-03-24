@@ -5,12 +5,12 @@ import { StyledNavBar } from '../Components/styled-components/index.styledCompon
 import { StoreContext } from "../store/StoreProvider"
 import { mobileMenuAnimation } from "../animations/menuAnimation/mobileMenuAnimation"
 
-const Navigation = ({ navButtons, homePage }) => {
+const Navigation = ({ navButtons }) => {
 const { isMenuOpen, setIsMenuOpen } = useContext(StoreContext)
 
  const hamburgerButtonHandler = () => {
   setIsMenuOpen(!isMenuOpen)
-  mobileMenuAnimation(!isMenuOpen, homePage)
+  mobileMenuAnimation(!isMenuOpen)
   }
 
   return ( 
@@ -18,7 +18,6 @@ const { isMenuOpen, setIsMenuOpen } = useContext(StoreContext)
         <StyledNavBar>
           <Hamburger isVisible={isMenuOpen} click={hamburgerButtonHandler} />
           <Menu
-            homePage={homePage}
             navButtons={navButtons}
             isVisible={isMenuOpen}
           />
