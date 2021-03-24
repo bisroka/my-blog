@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import { headerAnimation } from "../animations/headerAnimation/headerAnimation"
 import { desktopMenuAnimation } from "../animations/menuAnimation/desktopMenuAnimation"
@@ -8,8 +8,53 @@ import { ThemeProvider } from "styled-components"
 import { GlobalStyle, theme } from "../utils/theme"
 import { StyledPageWrapper } from "../utils/pageWrapper"
 import { Navigation, HelloSection, AboutMeSection, FreeTimeSection, BlogSection, ContactSection, FooterSection } from "../sections/index.sections"
-import StoreProvider, { StoreContext } from "../store/StoreProvider"
+import StoreProvider from "../store/StoreProvider"
 
+
+
+const IndexPage = ( {data} ) => {
+
+  useEffect(()=>{
+    headerAnimation()
+    desktopMenuAnimation()
+    sectionAnimation()
+  },[])
+
+    return (
+      <>
+        <GlobalStyle />
+        {/* <HelmetComponent data={ this.props.data.allDatoCmsSeo }/> */}
+        <StoreProvider>
+          <ThemeProvider theme={theme}>
+            <Navigation navButtons={pageContent.buttons.navButtons} />
+            <StyledPageWrapper>
+              <HelloSection
+                pageContent={pageContent.hello}
+                />
+              <AboutMeSection
+                pageContent={pageContent.aboutMe}
+                />
+              <FreeTimeSection
+              pageContent={pageContent.myFreeTime}
+                />
+              <BlogSection
+                pageContent={pageContent.blog}
+                buttons={pageContent.buttons}
+                data={data}
+                />
+              <ContactSection
+                pageContent={pageContent.contact}
+                />
+              <FooterSection footerContent={pageContent.footer.footerContent} /> 
+            </StyledPageWrapper>
+          </ThemeProvider>
+        </StoreProvider>
+      </>
+    )
+  }
+
+
+export default IndexPage
 
 export const query = graphql`
   query queryIndex {
@@ -45,50 +90,3 @@ export const query = graphql`
       }
     }
 `
-
-const IndexPage = ( {data} ) => {
-
-  const { newsLimit} = useContext(StoreContext)
-
-  useEffect(()=>{
-    headerAnimation()
-    desktopMenuAnimation()
-    sectionAnimation()
-  },[])
-
-    return (
-      <>
-        <GlobalStyle />
-        {/* <HelmetComponent data={ this.props.data.allDatoCmsSeo }/> */}
-        <StoreProvider>
-          <ThemeProvider theme={theme}>
-            <Navigation navButtons={pageContent.buttons.navButtons} />
-            <StyledPageWrapper>
-              <HelloSection
-                pageContent={pageContent.hello}
-                />
-              <AboutMeSection
-                pageContent={pageContent.aboutMe}
-                />
-              <FreeTimeSection
-              pageContent={pageContent.myFreeTime}
-                />
-              <BlogSection
-                pageContent={pageContent.blog}
-                showPostButton={pageContent.buttons.showPostButton}
-                loadMorePostButton={data.allDatoCmsArticle.edges.length > newsLimit ? pageContent.buttons.loadMorePostButton:"Sprawdź wszystkie posty"}
-                data={data}
-                />
-              <ContactSection
-                pageContent={pageContent.contact}
-                />
-              <FooterSection footerContent={pageContent.footer.footerContent} /> 
-            </StyledPageWrapper>
-          </ThemeProvider>
-        </StoreProvider>
-      </>
-    )
-  }
-
-
-export default IndexPage
