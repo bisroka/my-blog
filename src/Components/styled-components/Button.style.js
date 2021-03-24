@@ -13,7 +13,6 @@ export const StyledButton = styled.button`
   box-shadow: ${props=>props.theme.shadows.buttonShadow};
   border-radius: 25px;
   cursor: pointer;
-  /* opacity: 0.8; */
   opacity: 1;
   transition: 0.2s;
   @media ${device.laptop}{
@@ -22,10 +21,9 @@ export const StyledButton = styled.button`
     margin: ${props => (props.menu ? "0 2vh;" : null)};
   }
 
-  /* :hover {
-  } */
   a {
     display: block;
+    margin: 0 auto;
     width:100%;
     height: 100%;
     padding: 0.3em 0;
@@ -34,13 +32,9 @@ export const StyledButton = styled.button`
     color: ${props => (props.loadMore ? props.theme.colors.primary : props.theme.colors.gray)};
       @media ${device.tablet} {
       max-width: 250px;
-      /* padding: .4em 0; */
       }
       @media ${device.laptop} {
         width: 100%;
-        /* :hover {
-          transform: translateY(2px);
-        } */
       }
   }
   

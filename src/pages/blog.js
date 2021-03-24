@@ -21,8 +21,8 @@ const BlogPage = ({ data }) => {
       <GlobalStyle />
       <StoreProvider>
         <ThemeProvider theme={theme}>
-          <Navigation buttons={pageContent.buttons.navButtons} />
-          <Articles button1={pageContent.buttons.showPostButton} data={data} />
+          <Navigation navButtons={pageContent.buttons.navButtons} />
+          <Articles showPostButton={pageContent.buttons.showPostButton} data={data} />
         </ThemeProvider>
       </StoreProvider>
     </>

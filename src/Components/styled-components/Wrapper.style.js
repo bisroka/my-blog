@@ -9,7 +9,6 @@ export const StyledWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
-  /* grid-template-rows: auto auto auto auto auto; */
   align-items: center;
   column-gap: 5px;
     ${({helloSection})=>
@@ -26,20 +25,15 @@ export const StyledWrapper = styled.div`
             ". subheader subheader subheader subheader subheader image image image image image ."
             ". . . . . . image image image image image ."
             ". . . . . . image image image image image ."
-            ". . . . . . image image image image image ."
-            /* ". . image image image image image image image image image ." */
-            /* ". . image image image image image image image image image ." */;
+            ". . . . . . image image image image image .";
         }
         @media ${device.laptop} {
               grid-template-areas: 
-            /* "header header header header header image image image image image image image" */
             ". . . . . image image image image image image image"
             "header header header header header image image image image image image image"
             "subheader subheader subheader subheader subheader image image image image image image image"
             ". . . . . image image image image image image image"
-            ". . . . . image image image image image image image"
-            /* ". . image image image image image image image image image ." */
-            /* ". . image image image image image image image image image ." */;
+            ". . . . . image image image image image image image";
         }
             
     `}
@@ -73,14 +67,10 @@ export const StyledWrapper = styled.div`
      min-height: 35vh;
      padding: 0;
                 grid-template-areas: 
-            /* "header header header header header image image image image image image image" */
             "image image image image subheader subheader subheader subheader subheader . header header"
-            /* ". . . . subheader subheader subheader subheader subheader . header header" */
             "image image image image subheader subheader subheader subheader subheader . header header"
             "image image image image subheader subheader subheader subheader subheader . header header"
             "image image image image contacticons contacticons contacticons contacticons . . header header"
-            "image image image image . . . . . . header header"
-            /* ". . image image image image image image image image image ." */
-            /* ". . image image image image image image image image image ." */;
+            "image image image image . . . . . . header header";
     `}
 `

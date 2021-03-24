@@ -2,12 +2,6 @@ import styled, {css} from "styled-components"
 import {device} from "../../utils/device"
 
 export const StyledSection = styled.section`
-    /* padding: 5vh 0vh; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center;  */
-    /* justify-content: flex-start; */
-    /* height: 100vh; */
     min-height: 95vh;
     margin: 3vh auto;
     width: 100%;
@@ -21,7 +15,6 @@ export const StyledSection = styled.section`
           position: absolute;
         }
       &:before{
-       //ciemny
         top: -5%;
         right: 15%;
         width: 100%;
@@ -33,11 +26,9 @@ export const StyledSection = styled.section`
         z-index: -2;
         @media ${device.laptop} {
           right: 10%;
-          /* top: 0; */
         }
       }
       &:after{
-        //jasny
         top: -5%;
         left: -15%;
         width: 150%;
@@ -69,7 +60,6 @@ export const StyledSection = styled.section`
           background-image: ${props =>`url(${ props.backgroundImage})`};
           filter: blur(15px) grayscale(50%);
           @media ${device.laptop} {
-          /* height: 40vh; */
           }
         }
       `}

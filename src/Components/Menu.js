@@ -5,12 +5,12 @@ import PropTypes from "prop-types"
 import { useEffect } from "react"
 import { buttonHoverAnimation } from "../animations/hover/buttonHover"
 
-const Menu = ({ isVisible, buttons, homePage }) => {
+const Menu = ({ isVisible, navButtons, homePage }) => {
   useEffect(()=>{
     buttonHoverAnimation(document)
   })
-  const navButton = buttons.map(button => (
-    <Button className="button-hover" menu key={button.id} button={button.content} link={button.link} />
+  const navButton = navButtons.map(button => (
+    <Button className="button-hover" menu key={button.id} buttonText={button.content} link={button.link} />
   ))
   return <StyledMenu className="menu menu-inner" isVisible={isVisible} homePage={homePage}>{navButton}</StyledMenu>
 }

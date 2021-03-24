@@ -5,20 +5,20 @@ import FooterSection from "../sections/footerSection"
 import {pageContent} from "../utils/pageContent"
 import { theme } from "../utils/theme"
 
-import { StyledHeader, StyledSection, StyledWrapper, } from "../Components/styled-components/index.styledComponents"
+import { StyledHeader, StyledSection, StyledWrapper } from "../Components/styled-components/index.styledComponents"
 
 const StyledArticlesPage = styled.main`
   min-height:100vh;
   background: ${theme.colors.white};
 `
 
-const Articles = ({ data, button1 }) => {
+const Articles = ({ data, showPostButton }) => {
   const articles = data.allDatoCmsArticle.edges
   const news = articles.map(article => (
     <News
       className="news-card"
       key={article.node.title}
-      button={button1}
+      showPostButton={showPostButton}
       postTitle={article.node.title}
       postDescription={article.node.description}
       thumbnail={article.node.thumbnail}
@@ -29,7 +29,7 @@ const Articles = ({ data, button1 }) => {
     <>
       <StyledSection articles>
         <StyledArticlesPage>
-            <StyledHeader>Co u mnie słychać</StyledHeader>
+            <StyledHeader>{pageContent.blog.header}</StyledHeader>
           <StyledWrapper blogSection>
               {news}
             </StyledWrapper>
@@ -41,16 +41,3 @@ const Articles = ({ data, button1 }) => {
 }
 
 export default Articles
-
-// export const query = graphql`
-//   query fetchArticle($slug: String) {
-//     article: datoCmsArticle(slug: { eq: $slug }) {
-//       title
-//       slug
-//       content
-//       thumbnail {
-//         url
-//       }
-//     }
-//   }
-// `

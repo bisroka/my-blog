@@ -1,16 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled, { ThemeProvider } from "styled-components"
-import { device } from "../utils/device"
-import {pageContent} from "../utils/pageContent"
+import { pageContent } from "../utils/pageContent"
 import { GlobalStyle, theme } from "../utils/theme"
 import Navigation from "../sections/navigation"
 import FooterSection from "../sections/footerSection"
-
-import { StyledParagraph, StyledHeader, StyledSection } from "../Components/styled-components/index.styledComponents"
-import News from "../Components/News"
+import { StyledHeader, StyledSection } from "../Components/styled-components/index.styledComponents"
 import StoreProvider from "../store/StoreProvider"
-
 import { StructuredText } from 'react-datocms';
 
 const StyledWrapper = styled.section`
@@ -26,9 +22,15 @@ const StyledWrapper = styled.section`
   }
   h1,h2,h3,h4,h5,h6 {
     font-family: ${theme.fontFamily.header};
+    margin: 1em 0;
   }
   p, ul, ol{
     font-family: ${theme.fontFamily.paragraph};
+    line-height: 1.4em;
+  }
+  pre{
+    background-color: #f1f1f1;
+    padding: 1.3em;
   }
   blockquote{
     border-left: 15px solid ${theme.colors.primary};
@@ -52,14 +54,14 @@ const Article = ({ data: { article }  }) => {
       <GlobalStyle />
       <StoreProvider>
         <ThemeProvider theme={theme}>
-          <Navigation buttons={pageContent.buttons.navButtons} />
+          <Navigation navButtons={pageContent.buttons.navButtons} />
           <StyledSection articleSection backgroundImage={backgroundImage}>
             <StyledHeader articlePage className="outer">{article.title}</StyledHeader>
           </StyledSection>
           <StyledWrapper articleContent>
             <StructuredText 
             data={article.body} 
-            renderInlineRecord={({ record }) => <a href={record.slug}>{record.title}</a>}
+            renderInlineRecord={({ record }) => <a href={record.slug ? record.slug : ""}>{record.title}</a>}
             />
           </StyledWrapper>
           <FooterSection footerContent={pageContent.footer.footerContent} />

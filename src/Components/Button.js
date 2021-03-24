@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 import { StyledButton } from "./styled-components/Button.style"
 import PropTypes from "prop-types"
 
-const Button = ({ button, loadMore, menu, click, link, white, className }) => {
+const Button = ({ buttonText, loadMore, menu, click, link, white, className }) => {
   return (
     <StyledButton menu={menu} className={className} loadMore={loadMore} white={white} onClick={click}>
      {link!==null ?  
      <Link to={link ? link : ""}>
-        {button}
-     </Link> : {button}}
+        {buttonText}
+     </Link> : {buttonText}}
       </StyledButton>
   )
 }

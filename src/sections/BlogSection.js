@@ -1,31 +1,53 @@
-import React from "react"
+import React, { useContext, useEffect } from "react"
 import News from "../Components/News"
 import Button from "../Components/Button"
 import { StyledSection, StyledHeader, StyledWrapper } from "../Components/styled-components/index.styledComponents"
-import { useEffect } from "react"
+import { StoreContext } from "../store/StoreProvider"
+import { VanillaTilt } from "../animations/tilt-3d/tilt"
 
-const BlogSection = ({ header, button1, button2, data, limit, click }) => {
+const BlogSection = ({ pageContent, showPostButton, loadMorePostButton, data  }) => {
   const articles = data.allDatoCmsArticle.edges
-  
+  const { header  } = pageContent
+
+  const { newsLimit, setNewsLimit} = useContext(StoreContext)
+
+  const setNewsLimitHandler = e => {
+    e.preventDefault()
+    if(data.allDatoCmsArticle.edges.length > newsLimit ){
+      setNewsLimit(
+        newsLimit+3
+      )
+    }else {
+      location.href = '/blog';
+    }
+  }
+
+  useEffect(()=>{
+    VanillaTilt.init(document.querySelectorAll(".news-card"), {
+      max: 5,
+      speed: 400
+      })
+  }, [newsLimit])
+
   const news = articles.map(article => (
     <News
       className="news-card"
       key={article.node.title}
-      button={button1}
+      showPostButton={showPostButton}
       postTitle={article.node.title}
       postDescription={article.node.description}
       thumbnail={article.node.thumbnail}
       slug={article.node.slug}
       link={`/blog/${article.node.slug}/`}
     />
-  ))
-  const newsToShow = news.slice(0, limit)
+  )).slice(0, newsLimit)
+
   return (
     <StyledSection>
       <StyledWrapper blogSection className="blog-section" column>
         <StyledHeader>{header}</StyledHeader>
-        <StyledWrapper blogSection> {newsToShow} </StyledWrapper>
-        <Button className="button-hover" button={button2} click={click} />
+        <StyledWrapper blogSection> {news} </StyledWrapper>
+        <Button className="button-hover" buttonText={loadMorePostButton} click={setNewsLimitHandler} />
       </StyledWrapper>
     </StyledSection>
   )

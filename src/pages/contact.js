@@ -1,31 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ThemeProvider } from "styled-components"
 import { GlobalStyle, theme } from "../utils/theme"
 import { StyledPageWrapper } from "../utils/pageWrapper"
 import { Navigation, ContactSection, FooterSection } from "../sections/index.sections"
 import { pageContent } from "../utils/pageContent"
 
-class ContactPage extends Component {
-    state = {  }
-    render() { 
-        return ( 
+const ContactPage = () => {
+    return (     
         <>
         <GlobalStyle />
         <ThemeProvider theme={theme}>
-            <Navigation buttons={pageContent.buttons.navButtons} />
+            <Navigation navButtons={pageContent.buttons.navButtons} />
             <StyledPageWrapper>
-                <ContactSection
-                header={pageContent.contact.header}
-                subheader={pageContent.contact.subheader}
-                img={pageContent.contact.img}
-                contactPictures={pageContent.contact.contactPictures}
+            <ContactSection
+                pageContent={pageContent.contact}
                 />
-                  <FooterSection footerContent={pageContent.footer.footerContent} />
+                  <FooterSection footerContent={pageContent.footer.footerContent} /> 
                 </StyledPageWrapper> 
         </ThemeProvider>
         </>
-    );
-    }
+   );
 }
  
 export default ContactPage;

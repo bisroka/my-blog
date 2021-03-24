@@ -30,11 +30,9 @@ export const StyledArticle = styled.article`
         grid-template-areas: 
             ". image image image image . subheader subheader subheader subheader subheader ."
             ". image image image image . subheader subheader subheader subheader subheader ."
-            /* "image image image image image . subheader subheader subheader subheader subheader ." */
             ". image image image image . paragraphes paragraphes paragraphes paragraphes paragraphes paragraphes"
             ". . . . . . . . . . . ."
             ". . . . . . . . . . . .";
-            /* "image image image image image . paragraphes paragraphes paragraphes paragraphes paragraphes paragraphes"; */
       }
     &:before{
       content: '';
@@ -47,8 +45,5 @@ export const StyledArticle = styled.article`
       right: -10%;
       border-radius: 50%;
     }
-    /* @media ${device.laptop} {
-    font-size: ${props => props.theme.fontSize.xl};
-  } */
   `}
   `

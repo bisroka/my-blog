@@ -3,7 +3,6 @@ import { device } from "../../utils/device"
 
 export const StyledHeader = styled.h2`
   color: ${props => (props.lightColor ? props.theme.colors.lightColor : props.theme.colors.gray)};
-  /* margin-top: 5vh; */
   text-align: center;
   font-family: ${props => props.theme.fontFamily.header};
   font-size: ${props => props.theme.fontSize.xl};
@@ -16,8 +15,6 @@ export const StyledHeader = styled.h2`
       helloSection && css`
       margin: 3vh 0;
       text-align: left;
-      /* transform: ${props => (props.isMenuOpen ? "translateX(-100vw)" : "translateX(0)")}; */
-      /* transition: 0.7s; */
       @media ${device.tablet} {
         font-size: ${props => props.theme.fontSize.xxl}; 
       }
@@ -30,8 +27,6 @@ export const StyledHeader = styled.h2`
      transform: rotate(90deg);
      align-self: center;
      justify-self: center;
-     /* height: auto; */
-     /* width:100%; */
       @media ${device.tablet} {
         font-size: ${props => props.theme.fontSize.xxl};  
       }

@@ -15,13 +15,11 @@ export const StyledNewsCard = styled.article`
   cursor: pointer;
   transform-style: preserve-3d;
   @media ${device.tablet} {
-        /* padding: 1.5vh 1.5vh; */
         max-width: 50vw;
         height: 40vh;
     }
   @media ${device.laptop} {
     width: 30%;
-    /* max-width: 30vw; */
     height: auto;
   }
   a {

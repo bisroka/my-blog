@@ -10,18 +10,13 @@ export const StyledSubheader = styled.h3`
   z-index:1;
   grid-area: subheader;
   text-align: left;
-  /* font-weight: 700; */
   @media ${device.tablet} {
     font-size: ${props => props.theme.fontSize.l};
-    /* max-width: 55vw; */
   }
 
   ${({helloSection})=>
     helloSection && css `
     margin: 3vh 0;
-    /* transform: ${props => (props.isMenuOpen ? "translateX(-100vw)" : "translateX(0)")}; */
-    /* transition: 0.7s; */
-    /* position: absolute; */
     @media ${device.laptop} {
     font-size: ${props => props.theme.fontSize.xl};
   }
@@ -34,7 +29,6 @@ export const StyledSubheader = styled.h3`
     font-size: ${props => props.theme.fontSize.l};
     line-height: 30px;
   }
-  
   `}
   ${({freeTimeSection})=>
     freeTimeSection && css `
@@ -43,8 +37,8 @@ export const StyledSubheader = styled.h3`
   `}
   ${({blogSection})=>
     blogSection && css `
-    min-height: 90px;
-    margin: 1vh 0;
+    min-height: 2.5em;
+    margin: 0.5em 0;
     text-align: center;
   `}
   ${({contactSection})=>

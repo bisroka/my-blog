@@ -2,7 +2,8 @@ import React from "react"
 import Activity from "../Components/Activity"
 import {StyledSection, StyledHeader, StyledWrapper} from "../Components/styled-components/index.styledComponents"
 
-const FreeTimeSection = ({ header, activities }) => {
+const FreeTimeSection = ({ pageContent }) => {
+  const { header, activities } = pageContent
   const myActivities = activities.map(activity => (
     <Activity
       key={activity.id}

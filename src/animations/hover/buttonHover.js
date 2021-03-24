@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { theme } from "../../utils/theme"
 
-export const buttonHoverAnimation = (el, reverse) => {
+export const buttonHoverAnimation = (el) => {
 const buttons = el.querySelectorAll([".button-hover"])
 
   buttons.forEach(button=>{

@@ -3,8 +3,9 @@ import React, { useContext } from "react"
 import { StyledSection, StyledHeader,StyledSubheader, StyledWrapper, StyledImage} from "../Components/styled-components/index.styledComponents"
 import { StoreContext } from "../store/StoreProvider"
 
-const HelloSection = ({ header, subheader, img }) => {
+const HelloSection = ({ pageContent}) => {
   const { isMenuOpen } = useContext(StoreContext)
+  const {header, subheader, img } = pageContent
   return (
     <StyledSection helloSection>
       <StyledWrapper helloSection>

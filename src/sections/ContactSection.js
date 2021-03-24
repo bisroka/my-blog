@@ -3,7 +3,8 @@ import { StyledHeader, StyledImage, StyledFooter, StyledWrapper, StyledSubheader
 import ContactIcons from "../Components/ContactIcons"
 import { socialIconHoverAnimation } from "../animations/hover/socialIconHover"
 
-const ContactSection = ({ header, subheader, img, contactPictures }) => {
+const ContactSection = ({ pageContent }) => {
+  const { header, subheader, img, contactPictures } = pageContent
   useEffect(()=>{socialIconHoverAnimation()})
   return (
     <StyledFooter contact>

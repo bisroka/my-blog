@@ -1,10 +1,8 @@
 import gsap from 'gsap'
 import { theme } from "../../utils/theme"
-import { buttonHoverAnimation } from "./buttonHover"
 export const cardHoverAnimation = () => {
 
 const cards = document.querySelectorAll([".news-card"])
-// const cardImage = document.querySelector(".news-card a img")
 
 cards.forEach(card=>{
 const cardTimeLine = gsap.timeline({
