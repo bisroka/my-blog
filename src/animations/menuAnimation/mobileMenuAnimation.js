@@ -1,6 +1,6 @@
 import gsap from 'gsap'
 
-export const mobileMenuAnimation = (isOpen, homePage) => {
+export const mobileMenuAnimation = (isOpen) => {
     const outer = document.querySelectorAll('.outer')
     const menu = document.querySelector('.menu-inner')
 

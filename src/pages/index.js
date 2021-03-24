@@ -62,7 +62,7 @@ const IndexPage = ( {data} ) => {
         {/* <HelmetComponent data={ this.props.data.allDatoCmsSeo }/> */}
         <StoreProvider>
           <ThemeProvider theme={theme}>
-            <Navigation homePage={true} navButtons={pageContent.buttons.navButtons} />
+            <Navigation navButtons={pageContent.buttons.navButtons} />
             <StyledPageWrapper>
               <HelloSection
                 pageContent={pageContent.hello}
