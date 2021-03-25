@@ -5,14 +5,16 @@ export const StyledWrapper = styled.div`
   padding: 15px;
   max-width: 1200px;
   height: 100%;
-  min-height: 90vh;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   align-items: center;
+ 
   column-gap: 5px;
     ${({helloSection})=>
       helloSection && css`
+      min-height: 90vh;
       grid-template-areas: 
             ". header header header header header header header header . . ."
             ". subheader subheader subheader subheader subheader subheader subheader subheader . . ."
@@ -35,7 +37,6 @@ export const StyledWrapper = styled.div`
             ". . . . . image image image image image image image"
             ". . . . . image image image image image image image";
         }
-            
     `}
     ${({freeTimeSection})=>
     freeTimeSection && css`
@@ -52,7 +53,9 @@ export const StyledWrapper = styled.div`
     ${({blogSection})=>
     blogSection && css`
    display: flex;
+   padding: 0;
    padding-top: 3vh;
+   margin: 0 auto;
    flex-direction: column;
    flex-wrap: nowrap;
    align-items: center;
