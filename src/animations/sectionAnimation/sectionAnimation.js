@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const sectionAnimation = () => {
   gsap.registerPlugin(ScrollTrigger);    
-  const sections =  [...document.querySelectorAll(['section:not(:first-child) * '])]
+  const sections =  [...document.querySelectorAll(['section:not(:nth-child(2)) *'])]
   sections.forEach(section=>{
     const sectionsTimeline = gsap.timeline({
       scrollTrigger: {
