@@ -8,7 +8,7 @@ export const StyledArticle = styled.article`
   margin: 5vh 1vh 0vh;
   
  ${({aboutMeSection})=>
-    aboutMeSection && css `
+  aboutMeSection && css `
   display: grid;
   position: relative;
   margin: 7vh auto;
@@ -39,7 +39,7 @@ export const StyledArticle = styled.article`
       position: absolute;
       width: 70%;
       height: 22%;
-      background: #d8e8f9;
+      background: #E6F2FF;
       filter: drop-shadow(0px 0px 30px rgba(216, 232, 249, 0.31));
       top: 65%;
       right: -10%;
