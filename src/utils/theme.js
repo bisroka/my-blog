@@ -34,9 +34,9 @@ export const theme = {
 
 export const GlobalStyle = createGlobalStyle`
       body{
-        overflow-x: hidden;
         width:100vw;
-        min-height: 95vh;
+        width: 100%;
+        min-height: 100vh;
         margin: 0 auto;
 }
 

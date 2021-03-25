@@ -11,7 +11,7 @@ export const headerAnimation = () => {
     const headerTimeLine = gsap.timeline({defaults: {
         ease: 'expo'
     }})
-    headerTimeLine.fromTo(header,{y:'-=300'}, {y:"+=300", autoAlpha:1, duration:1.2})
-    .fromTo(image, {x:'+=150'}, {x:"-=150", autoAlpha:1, duration:1.2, })
-    .fromTo(subHeader, {y:'-=100'}, {y:"+=100", autoAlpha:1, duration:1.2, })
+    headerTimeLine.fromTo(header,{y:"-=300", autoAlpha:0}, {y:"+=300", autoAlpha:1, duration:2.5})
+                .fromTo(image, {x:'+=150', autoAlpha:0}, {x:"-=150", autoAlpha:1, duration:1.2, }, "-=1")
+                .fromTo(subHeader, {y:'-=300', autoAlpha:0}, {y:"+=300", autoAlpha:1, duration:1.2, }, "-=1" )
 }
