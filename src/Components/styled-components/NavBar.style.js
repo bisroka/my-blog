@@ -13,6 +13,6 @@ margin: 0 auto;
 @media ${device.laptop} {
   max-width: 100vw;
   height: 10vh;
-  width: 100vw;
+  width: 100%;
 }
 `
