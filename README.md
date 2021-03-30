@@ -1,4 +1,5 @@
 ## Hello Everyone! <br>
+
 ### ABOUT PROJECT <br>
 
 <i>This is my own project. This is my own place in Internet. This is my own blog! </i><br>
@@ -13,14 +14,18 @@ I used <a href="https://gatsbyjs.com">Gatsby.js</a> with <a href="https://www.ga
 I also used <a href="https://styled-components.com/">styled-components</a> library.
 
 ### ANIMATIONS
+
 <a href="https://greensock.com/gsap/">GSAP<a>
 <a href="https://micku7zu.github.io/vanilla-tilt.js/">vanilla-tild-3d<a>
 
 ### TESTS
+
 <a href="https://jestjs.io/">Jest JS<a>
 
 ### DEPLOYMENT
+
 Netlify
 
 ### CHECK THIS!
+
 <a href="https://fajnyblog.netlify.app/">https://fajnyblog.netlify.app/<a>
