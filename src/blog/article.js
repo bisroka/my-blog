@@ -8,6 +8,7 @@ import FooterSection from "../sections/footerSection"
 import { StyledHeader, StyledSection } from "../Components/styled-components/index.styledComponents"
 import StoreProvider from "../store/StoreProvider"
 import { StructuredText } from 'react-datocms';
+import { StyledPageWrapper } from "../utils/pageWrapper"
 
 const StyledWrapper = styled.section`
   max-width: 1200px;
@@ -54,17 +55,19 @@ const Article = ({ data: { article }  }) => {
       <GlobalStyle />
       <StoreProvider>
         <ThemeProvider theme={theme}>
-          <Navigation navButtons={pageContent.buttons.navButtons} />
-          <StyledSection articleSection backgroundImage={backgroundImage}>
-            <StyledHeader articlePage className="outer">{article.title}</StyledHeader>
-          </StyledSection>
-          <StyledWrapper articleContent>
-            <StructuredText 
-            data={article.body} 
-            renderInlineRecord={({ record }) => <a href={record.slug ? record.slug : ""}>{record.title}</a>}
-            />
-          </StyledWrapper>
-          <FooterSection footerContent={pageContent.footer.footerContent} />
+          <StyledPageWrapper>
+              <Navigation navButtons={pageContent.buttons.navButtons} />
+              <StyledSection articleSection backgroundImage={backgroundImage}>
+                <StyledHeader articlePage className="outer">{article.title}</StyledHeader>
+              </StyledSection>
+              <StyledWrapper articleContent>
+                <StructuredText 
+                data={article.body} 
+                renderInlineRecord={({ record }) => <a href={record.slug ? record.slug : ""}>{record.title}</a>}
+                />
+              </StyledWrapper>
+              <FooterSection footerContent={pageContent.footer.footerContent} />
+          </StyledPageWrapper>
         </ThemeProvider>
       </StoreProvider>
     </>
