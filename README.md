@@ -22,5 +22,7 @@ I also used <a href="https://styled-components.com/">styled-components</a> libra
 ### DEPLOYMENT
 Netlify
 
+
 ### CHECK THIS!
 <a href="https://fajnyblog.netlify.app/">https://fajnyblog.netlify.app/<a>
+
